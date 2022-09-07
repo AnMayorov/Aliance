@@ -130,10 +130,9 @@ body {
 .header__logo {
   margin-left: 50px;
 }
-.header__logo-svg {}
 .header__menu {
   flex: 1 1 auto;
-  margin-left: 100px;
+  margin-left: 6.25em/*100px*/;
 }
 .header__menu-item {
   margin-right: 3.125em/*50px*/;
