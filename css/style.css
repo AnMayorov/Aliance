@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*--Меняет отсчёт ширины блока для более удобной вёрстки--*/
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--Убирает линии обводки у некоторых браузеров--*/
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*--Делает теги блочными--*/
+header,
+nav,
+aside,
+footer {
+  display: block;
+}
+
+/*--Параметры, которые уравнивают поведение шрифтов и элементов для разных браузеров--*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*--Наследование семейства шрифта тегами формы(по умолчанию не наследуют)--*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*--Данные параметры убирают некоторые особенности в разных браузерах--*/
+input::-ms-clear {
+  display: none;
+}
+button {
+  background: transparent;
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+/*--Обнуление заголовков--*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/********************/
+:root {
+  --bg-btn: #5c8ee6;
+  --1-color-txt: #fff;
+  --2-color-txt: #292d33;
+  --3-color-txt: #828a99;
+  --4-color-txt: #5c8ee5;
+}
+/********************/
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 160%;
+}
+.wrapper {
+  flex-direction: column;
+}
+[class*="_container"] {
+  margin: 0 auto;
+  max-width: 90em/*1440px*/;
+}
+.flex {
+  display: flex;
+}
+.btn {
+
+  background-color: var(--bg-btn);
+}
+/********************/
+
+/**header************/
+
+
+.header {
+  background: brown;
+}
+.header__nav {
+  align-items: center;
+}
+.header__logo {
+  margin-left: 50px;
+}
+.header__logo-svg {}
+.header__menu {
+  flex: 1 1 auto;
+  margin-left: 100px;
+}
+.header__menu-item {
+  margin-right: 3.125em/*50px*/;
+  line-height: 160%;
+}
+.header__menu-item:last-child {
+  margin: 0;
+}
+.header__menu-link {
+  color: var(--1-color-txt);
+}
+.header__buttons {
+  align-items: center;
+}
+.header__link-phon {
+  align-items: center;
+  margin-right: 3.125em/*50px*/;
+}
+.header__number-icon {}
+.header__number-phon {
+  margin-left: 10px;
+  color: var(--1-color-txt);
+}
+.header__button {
+  padding: 2.125rem/*34px*/ 3.125rem/*50px*/;
+  color: var(--1-color-txt);
+}
+
+
+.menu {}
+
+/**main**************/
+.main {
+  flex: 1 1 auto;
+}
+
+/**footer************/
+
