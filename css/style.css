@@ -171,7 +171,6 @@ body {
   align-items: center;
   margin-right: 3.125em/*50px*/;
 }
-.header__number-icon {}
 .header__number-phon {
   margin-left: 10px;
   color: var(--1-color-txt);
