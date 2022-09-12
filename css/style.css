@@ -135,6 +135,7 @@ body {
 /**header************/
 .header {
   position: relative;
+  padding-top: 243px;
   margin-bottom: 9.375em/*150px*/;
   min-height: 100vh;
   background: url("../img/header_icons/header_bg.jpg") 50% / cover no-repeat;
@@ -150,10 +151,22 @@ body {
 }
 
 .header__nav {
-  position: relative;
-  margin-bottom: 9.375em/*150px*/;
+  position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
+  width: 100%;
+  z-index: 50;
+  color: var(--1-color-txt);
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.4s;
+}
+.nav-white {
+  color: var(--2-color-txt);
+  background-color: var(--1-color-txt);
+}
+.nav-white .logo__path {
+  fill: var(--2-color-txt);
 }
 .header__logo {
   padding: 1.25rem/*20px*/ 3.125rem/*50px*/;
@@ -171,7 +184,7 @@ body {
   margin: 0;
 }
 .header__menu-link {
-  color: var(--1-color-txt);
+  color: inherit;
 }
 .header__buttons {
   align-items: center;
@@ -179,13 +192,13 @@ body {
 .header__link-phon {
   align-items: center;
   margin-right: 3.125em/*50px*/;
+  color: inherit;
 }
 .header__number-phon {
   margin-left: 10px;
-  color: var(--1-color-txt);
 }
 .header__button {
-  padding: 2.125rem/*34px*/ 3.125rem/*50px*/;
+  padding: 2.3125rem/*37px*/ 3.125rem/*50px*/;
   color: var(--1-color-txt);
 }
 .header__container {
