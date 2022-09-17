@@ -136,9 +136,9 @@ body {
 .header {
   position: relative;
   padding-top: 243px;
-  margin-bottom: 9.375em/*150px*/;
+  margin-bottom: 9.3125em/*149px*/;
   min-height: 100vh;
-  background: url("../img/header_icons/header_bg.jpg") 50% / cover no-repeat;
+  background: url("../img/header_icons/header_bg.jpg") center bottom -47px / cover no-repeat;
 }
 .header::before {
   content: "";
@@ -172,7 +172,7 @@ body {
   fill: var(--2-color-txt);
 }
 .nav-white .header__button {
-  padding: 1.75rem/*28px*/ 3.125rem/*50px*/;
+  padding: 1.75rem/*28px*/ 2.0625rem/*33px*/ 1.75rem/*28px*/ 3.125rem/*50px*/;
 }
 .nav-white .header__logo {
   padding: 1.0625rem/*17px*/ 3.125rem/*50px*/;
@@ -184,10 +184,10 @@ body {
 }
 .header__menu {
   flex: 1 1 auto;
-  margin-left: 6.25em/*100px*/;
+  margin-left: 3.0625em/*49px*/;
 }
 .header__menu-item {
-  margin-right: 3.125em/*50px*/;
+  margin-right: 3.1875em/*51px*/;
   line-height: 160%;
 }
 .header__menu-item:last-child {
@@ -201,22 +201,25 @@ body {
 }
 .header__link-phone {
   align-items: center;
+  padding-top: 3px;
   margin-right: 3.125em/*50px*/;
   color: inherit;
 }
 .header__number-phone {
-  margin-left: 10px;
+  margin-left: 10px/*0.625em*/;
 }
 .header__button {
-  padding: 2.3125rem/*37px*/ 3.125rem/*50px*/;
+  padding: 2.5rem/*40px*/ 2.0625rem/*33px*/ 2.3125rem/*37px*/ 3.125rem/*50px*/;
+  font-weight: 600;
   color: var(--1-color-txt);
   transition: padding 0.5s;
 }
 .header__container {
   position: relative;
+  padding-left: 8px;
 }
 .header__seporator {
-  margin-bottom: 1.875em/*30px*/;
+  margin-bottom: 1.4375em/*23px*/;
   width: 150px;
   height: 2px;
   background: var(--4-color-txt);
@@ -227,7 +230,7 @@ body {
   margin-bottom: 6.25em/*100px*/;
 }
 .header__title {
-  margin-bottom: 0.375em/*30px*/;
+  margin-bottom: 0.4875em/*39px*/;
   font-family: 'Bebas Neue Regular', serif;
   font-size: 5rem/*80px*/;
   line-height: 120%;
@@ -235,17 +238,18 @@ body {
   color: var(--1-color-txt);
 }
 .header__text {
-  margin-bottom: 3.125em/*50px*/;
+  margin-bottom: 3.1875em/*51px*/;
   max-width: 45rem/*720px*/;
   color: var(--1-color-txt);
 }
 .header__content-button {
-  padding: 1.5625rem/*25px*/ 3.75rem/*60px*/;
+  padding: 1.75rem/*28p*/ 3.75rem/*60px*/;
   font-weight: 600;
   color: var(--1-color-txt);
 }
 .header__features {
   position: relative;
+  margin-right: -8px;
 }
 .header__features-list {
   align-items: center;
@@ -256,18 +260,15 @@ body {
 }
 .header__features-item {
   flex-direction: column;
-  padding: 2.1875rem/*35px*/ 3.125rem/*50px*/ 1.875rem/*30px*/;
+  padding: 1.875rem/*30px*/ 3.8125rem/*61px*/ 1.9375rem/*31px*/ 3rem/*48px*/;
+  max-width: 18em/*288px*/;
 }
 .header__features-item:not(:last-child) {
   border-right: 1px solid rgba(235, 235, 240, 0.2);
 }
-.header__features-icon {
-  margin-bottom: 24px;
-  width: 36px;
-  height: 36px;
-}
+
 .header__features-text {
-  margin-top: 25.45px;
+  margin: 1.3125em/*21px*/ 0 0 1px;
   color: var(--1-color-txt);
 }
 
@@ -280,26 +281,35 @@ body {
 /*--Section steps---*/
 .steps {
 }
+.steps__container {
+  padding-left: 8px;
+}
 .steps__seporator {
-  margin-bottom: 30px;
+  margin-bottom: 1.5em/*24px*/;
   width: 150px;
   height: 2px;
   background: var(--4-color-txt);
 }
 .steps__list {
   align-items: center;
-  margin: 0 -15px;
+  padding-top: 2px;
 }
 .steps__list-item {
-  flex: 1 1 330px;
   flex-direction: column;
   align-items: flex-start;
   align-self: flex-start;
-  padding: 0 15px;
+  margin-right: 3.4375em/*55px*/;
+  max-width: 19.0625em/*305px*/;
+}
+.steps__list-item:last-child {
+  margin: 0;
+}
+.text-4 {
+  max-width: 18.75em/*300px*/;
 }
 .item__number {
   align-items: center;
-  margin-bottom: 0.625em/*30px*/;
+  margin-bottom: 0.708333em/*34px*/;
   font-family: 'Bebas Neue Regular', serif;
   font-size: 3rem/*48px*/;
   line-height: 120%;
@@ -313,7 +323,7 @@ body {
   background: var(--bg-steps-line);
 }
 .item__subtitle {
-  margin-bottom: 0.357em/*10px*/;
+  margin-bottom: 0.42857em/*12px*/;
   font-size: 1.75rem/*28px*/;  
   line-height: 160%;
   color: var(--2-color-txt);
@@ -324,11 +334,12 @@ body {
 .item__link {
   align-items: center;
   margin-top: 1.25em/*20px*/;
+  padding-top: 1px;
   font-weight: 600;
   color: var(--4-color-txt);
 }
 .item__link-line {
-  margin-right: 20px;
+  margin-right: 1.25em/*20px*/;
   width: 40px;
   height: 1px;
   background: var(--4-color-txt);
