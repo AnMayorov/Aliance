@@ -37,6 +37,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 100%;
+  font-size: 16px;
   line-height: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -156,7 +157,7 @@ body {
   left: 0;
   align-items: center;
   width: 100%;
-  height: 94px;
+  height: 5.875rem/*94px*/;
   z-index: 50;
   color: var(--1-color-txt);
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
@@ -164,7 +165,7 @@ body {
 }
 
 .nav-white {
-  height: 74px;
+  height: 4.625rem/*74px*/;
   color: var(--2-color-txt);
   background-color: var(--1-color-txt);
 }
@@ -181,6 +182,10 @@ body {
 .header__logo {
   padding: 1.5825rem/*25px*/ 3.125rem/*50px*/;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
+}
+.logo__svg {
+  width: 8.75rem/*140px*/;
+  height: 2.75rem/*44px*/;
 }
 .header__menu {
   flex: 1 1 auto;
@@ -206,7 +211,7 @@ body {
   color: inherit;
 }
 .header__number-phone {
-  margin-left: 10px/*0.625em*/;
+  margin-left: 0.625em/*10px*/;
 }
 .header__button {
   padding: 2.5rem/*40px*/ 2.0625rem/*33px*/ 2.3125rem/*37px*/ 3.125rem/*50px*/;
@@ -220,7 +225,7 @@ body {
 }
 .header__seporator {
   margin-bottom: 1.4375em/*23px*/;
-  width: 150px;
+  width: 9.375rem/*150px*/;
   height: 2px;
   background: var(--4-color-txt);
 }
@@ -286,7 +291,7 @@ body {
 }
 .steps__seporator {
   margin-bottom: 1.5em/*24px*/;
-  width: 150px;
+  width: 9.375rem/*150px*/;
   height: 2px;
   background: var(--4-color-txt);
 }
@@ -340,10 +345,21 @@ body {
 }
 .item__link-line {
   margin-right: 1.25em/*20px*/;
-  width: 40px;
+  width: 2.5rem/*40px*/;
   height: 1px;
   background: var(--4-color-txt);
 }
+@media (max-width: 106.875em/*1710px*/) {
+  html {
+    font-size: 14px;
+  }
+  .header-image {
+    background-position: 50%;
+  }
+}
+
 
 /**footer************/
+
+
 
