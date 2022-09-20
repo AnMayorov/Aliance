@@ -357,6 +357,11 @@ body {
     background-position: 50%;
   }
 }
+@media (max-width: 93.75em/*1500px*/) {
+  html {
+    font-size: 10px;
+  }
+}
 
 
 /**footer************/
