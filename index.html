@@ -13,7 +13,96 @@
 </head>
 <body>
   <div class="wrapper">
+    <div class="mobile__menu">
+      <ul class="mobile__menu-list flex">
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">О компании</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Контрактное производство</a>
+
+          <ul class="mobile__submenu flex">
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Автомобильная химия</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Бытовая химия</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Дезинфицирующие средства</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Пищевые аэрозоли</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Косметическая продукция</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Краски аэрозольные</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Собственные торговые марки</a>
+
+          <ul class="mobile__submenu">
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Автохимия AG-Tech</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Автохимия AP</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Новости</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Контакты</a>
+        </li>
+      </ul>
+
+      <a href="tel:+74996861014" class="mobile__phone">+7 (499) 686-10-14</a>
+
+      <ul class="mobile__info-list flex">
+        <li class="mobile__info-item">
+          <a href="#" class="mobile__info-link flex">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_check"></use>
+            </svg> 
+            <address class="mobile__info-address">г. Мосвка, Холодильный пер. 4к1с8</address>
+          </a>
+        </li>
+        <li class="mobile__info-item">
+          <a href="mailto:a.dragunov@tdaliance.ru" class="mobile__info-link flex">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_mail"></use>
+            </svg>
+            <span class="mobile__info-span">a.dragunov@tdaliance.ru</span>
+          </a>
+        </li>
+        <li class="mobile__info-item info flex">
+          <a class="info__link-vk" href="#">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_vk"></use>
+            </svg>
+          </a>
+          <a class="info__link-inst" href="#">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_inst"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <nav class="header__nav flex">
+      <a href="#" class="header__mobile mobile-toggle flex">
+        <div class="mobile__line"></div>
+        <div class="mobile__line line-between"></div>
+        <div class="mobile__line"></div>
+      </a>
+
       <a href="./" class="header__logo logo flex">
         <svg class="logo__svg">
           <use href="img/sprite.svg#logo_white"></use>
@@ -40,13 +129,20 @@
     
       <div class="header__buttons flex">
         <a href="tel:+74996861014" class="header__link-phone flex">
-          <svg class="header__svg" width="24" height="24">
+          <svg class="header__svg-phone">
             <use href="img/sprite.svg#phone"></use>
           </svg>
           <span class="header__number-phone">+7 (499) 686-10-14</span>
         </a>
     
-        <button class="header__button btn">Получить консультацию</button>
+        <button class="header__button btn">
+          <svg class="header__svg-phone">
+            <use href="img/sprite.svg#phone"></use>
+          </svg>
+          <span class="header__button-text">
+            Получить консультацию
+          </span> 
+        </button>
       </div>
     </nav>
 
