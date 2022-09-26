@@ -33,3 +33,51 @@ mMenuToggle.addEventListener("click", (event) => {
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    /*spaceBetween: 100,*/  // сейчас не нужно
+  }
+});
+
+const steps = new Swiper('.steps__swiper', {
+  speed: 400,
+  autoHeight: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.slider-button-steps-next',
+    prevEl: '.slider-button-steps-prev',
+  },
+  breakpoints: {
+    485: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    /*spaceBetween: 100,*/  // сейчас не нужно
+  }
+});
+

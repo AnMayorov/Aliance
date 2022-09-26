@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Aliance production</title>
 </head>
+
 <body>
   <div class="wrapper">
     <div class="mobile__menu">
@@ -69,7 +72,7 @@
           <a href="#" class="mobile__info-link flex">
             <svg class="mobile__svg" width="24" height="24">
               <use href="img/sprite.svg#address_check"></use>
-            </svg> 
+            </svg>
             <address class="mobile__info-address">г. Мосвка, Холодильный пер. 4к1с8</address>
           </a>
         </li>
@@ -108,7 +111,7 @@
           <use href="img/sprite.svg#logo_white"></use>
         </svg>
       </a>
-    
+
       <ul class="header__menu menu flex">
         <li class="header__menu-item">
           <a href="#" class="header__menu-link">О компании</a>
@@ -126,7 +129,7 @@
           <a href="#" class="header__menu-link">Контакты</a>
         </li>
       </ul>
-    
+
       <div class="header__buttons flex">
         <a href="tel:+74996861014" class="header__link-phone flex">
           <svg class="header__svg-phone">
@@ -134,14 +137,14 @@
           </svg>
           <span class="header__number-phone">+7 (499) 686-10-14</span>
         </a>
-    
+
         <button class="header__button btn">
           <svg class="header__svg-phone">
             <use href="img/sprite.svg#phone"></use>
           </svg>
           <span class="header__button-text">
             Получить консультацию
-          </span> 
+          </span>
         </button>
       </div>
     </nav>
@@ -158,15 +161,18 @@
             Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
             высококачественный прототип будущего проекта напрямую зависит от анализа существующих паттернов поведения.
           </p>
-        
+
           <button class="header__content-button btn">
             Подробнее о компании
           </button>
         </div>
 
-        <div class="header__features">
-          <ul class="header__features-list flex">
-            <li class="header__features-item flex">
+        <!-- Оснвной блок слайдера -->
+        <div class="swiper header__features">
+          <!-- обёртка слайдера -->
+          <ul class="swiper-wrapper header__features-list flex">
+            <!-- Слайды -->
+            <li class="swiper-slide header__features-item flex">
               <svg class="header__svg" width="36" height="36">
                 <use href="img/sprite.svg#features_icon_1"></use>
               </svg>
@@ -174,7 +180,7 @@
                 Непрерывная работа c 2017 года
               </p>
             </li>
-            <li class="header__features-item flex">
+            <li class="swiper-slide header__features-item flex">
               <svg class="header__svg" width="36" height="36">
                 <use href="img/sprite.svg#features_icon_2"></use>
               </svg>
@@ -182,7 +188,7 @@
                 Вся продукция сертифицирована
               </p>
             </li>
-            <li class="header__features-item flex">
+            <li class="swiper-slide header__features-item flex">
               <svg class="header__svg" width="36" height="36">
                 <use href="img/sprite.svg#features_icon_3"></use>
               </svg>
@@ -190,15 +196,15 @@
                 Контроль качества на всех этапах
               </p>
             </li>
-            <li class="header__features-item flex">
+            <li class="swiper-slide header__features-item flex">
               <svg class="header__svg" width="36" height="36">
                 <use href="img/sprite.svg#features_icon_4"></use>
               </svg>
               <p class="header__features-text">
                 Возможны поставки по всей России
-              </p>              
+              </p>
             </li>
-            <li class="header__features-item  flex">
+            <li class="swiper-slide header__features-item flex">
               <svg class="header__svg" width="36" height="36">
                 <use href="img/sprite.svg#features_icon_5"></use>
               </svg>
@@ -207,7 +213,28 @@
               </p>
             </li>
           </ul>
+          <!-- Постраничная навигация -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- Сейчас не нужна -->
+
+          <div class="header__slider-buttons flex">
+            <!-- Кнопки навигации вперёд/назад -->
+            <button class="slider-button-prev flex">
+              <svg class="header__svg" width="36" height="24">
+                <use href="img/sprite.svg#arrow_back"></use>
+              </svg>
+            </button>
+            <button class="slider-button-next flex">
+              <svg class="header__svg" width="36" height="24">
+                <use href="img/sprite.svg#arrow_forward"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- Прокрутка -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+          <!-- Сейчас не нужна -->
         </div>
+
       </div>
     </header>
 
@@ -221,10 +248,80 @@
               Схема работы
             </h2>
 
+            <div class="steps__swiper">
+              <!-- обёртка слайдера -->
+              <ul class="swiper-wrapper steps__list flex">
+                <!-- Слайды -->
+                <li class="swiper-slide steps__list-item item flex">
+                  <span class="item__number flex">01</span>
+
+                  <h3 class="item__subtitle">
+                    Знакомство
+                  </h3>
+                  <p class="item__text">
+                    Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.
+                  </p>
+                  <a href="#" class="item__link flex">
+                    <div class="item__link-line"></div>
+                    Оставить заявку
+                  </a>
+                </li>
+                <li class="swiper-slide steps__list-item item flex">
+                  <span class="item__number flex">02</span>
+
+                  <h3 class="item__subtitle">
+                    Заключение договора
+                  </h3>
+                  <p class="item__text">
+                    Лишь интерактивные прототипы призваны к ответу.
+                  </p>
+                </li>
+                <li class="swiper-slide steps__list-item item flex">
+                  <span class="item__number flex">03</span>
+
+                  <h3 class="item__subtitle">
+                    Производство
+                  </h3>
+                  <p class="item__text">
+                    А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на
+                    независимые
+                    элементы.
+                  </p>
+                </li>
+                <li class="swiper-slide steps__list-item item flex">
+                  <span class="item__number flex">04</span>
+
+                  <h3 class="item__subtitle">
+                    Доставка
+                  </h3>
+                  <p class="item__text text-4">
+                    В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации разума над
+                    эмоциями.
+                  </p>
+                </li>
+              </ul>
+              
+              <div class="steps__slider-buttons-box flex">
+                <div class="steps__slider-buttons flex">
+                  <!-- Кнопки навигации вперёд/назад -->
+                  <button class="slider-button-steps-prev flex">
+                    <svg class="header__svg" width="36" height="20">
+                      <use href="img/sprite.svg#arrow_back"></use>
+                    </svg>
+                  </button>
+                  <button class="slider-button-steps-next flex">
+                    <svg class="header__svg" width="36" height="20">
+                      <use href="img/sprite.svg#arrow_forward"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--  
             <ul class="steps__list flex">
               <li class="steps__list-item item flex">
                 <span class="item__number flex">01</span>
-            
+
                 <h3 class="item__subtitle">
                   Знакомство
                 </h3>
@@ -238,7 +335,7 @@
               </li>
               <li class="steps__list-item item flex">
                 <span class="item__number flex">02</span>
-            
+
                 <h3 class="item__subtitle">
                   Заключение договора
                 </h3>
@@ -248,26 +345,29 @@
               </li>
               <li class="steps__list-item item flex">
                 <span class="item__number flex">03</span>
-            
+
                 <h3 class="item__subtitle">
                   Производство
                 </h3>
                 <p class="item__text">
-                  А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые
+                  А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на
+                  независимые
                   элементы.
                 </p>
               </li>
               <li class="steps__list-item item flex">
                 <span class="item__number flex">04</span>
-            
+
                 <h3 class="item__subtitle">
                   Доставка
                 </h3>
                 <p class="item__text text-4">
-                  В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации разума над эмоциями.
+                  В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации разума над
+                  эмоциями.
                 </p>
               </li>
             </ul>
+            -->
           </div>
         </div>
       </section>
@@ -275,7 +375,8 @@
 
     <footer class="footer"></footer>
   </div>
-
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
