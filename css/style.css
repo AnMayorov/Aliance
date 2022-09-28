@@ -173,7 +173,7 @@ body {
   fill: var(--2-color-txt);
 }
 .nav-white .header__button {
-  padding: 0 2.0625rem/*33px*/ 0 3.125rem/*50px*/;
+  padding: 0 3.125rem/*50px*/ 0 3.125rem/*50px*/;
   height: 4.625rem/*74px*/;
 }
 .nav-white .header__logo {
@@ -225,7 +225,9 @@ body {
   margin-left: 0.625em/*10px*/;
 }
 .header__button {
-  padding: 0 2.0625rem/*33px*/ 0 3.125rem/*50px*/;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3.125rem/*50px*/ 0 3.125rem/*50px*/;
   height: inherit;
   font-weight: 600;
   color: var(--1-color-txt);
@@ -233,7 +235,6 @@ body {
 }
 .header__container {
   position: relative;
-  padding-left: 8px;
 }
 .header__seporator {
   margin-bottom: 1.4375em/*23px*/;
@@ -275,7 +276,7 @@ body {
   flex-direction: column;
   padding: 1.875rem/*30px*/ 3.8125rem/*61px*/ 1.9375rem/*31px*/ 3rem/*48px*/;
   height: auto;
-  width: 18rem/*288px*/;
+  max-width: 18rem/*288px*/;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -283,6 +284,7 @@ body {
   margin: 1.3125em/*21px*/ 0 0 1px;
   color: var(--1-color-txt);
 }
+
 .header__slider-buttons {
   display: none;
   height: 2.75rem/*44px*/;
@@ -307,7 +309,6 @@ body {
 .steps {
 }
 .steps__container {
-  padding-left: 8px;
 }
 .steps__seporator {
   margin-bottom: 1.5em/*24px*/;
@@ -402,6 +403,18 @@ body {
     display: none;
   }
 }
+@media (min-width: 120em/*1920px*/) {
+  .mobile__menu {
+    display: none;
+  }
+  .header__mobile {
+    display: none;
+  }
+  .header__button .header__svg-phone {
+    display: none;
+  }
+}
+
 @media (max-width: 106.875em/*1710px*/) {
   html {
     font-size: 14px;
@@ -418,6 +431,7 @@ body {
 @media (max-width: 68.75em/*1100px*/) {
   [class*="_container"] {
     max-width: 61.25em/*980px*/;
+    margin: 0 auto;
   }
   .header__link-phone {
     display: none;
@@ -469,7 +483,8 @@ body {
 }
 @media (max-width: 48em/*768px*/) {
   [class*="_container"] {
-    max-width: 48.75rem/*780px*/;
+    max-width: 48.75rem/*750px*/;
+    margin: 0 auto;
   }
   
   .header__menu {
@@ -646,6 +661,7 @@ body {
 @media (max-width: 36em/*576px*/) {
   [class*="_container"] {
     max-width: 90%;
+    margin: 0 auto;
   }
 }
 
