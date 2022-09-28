@@ -464,12 +464,17 @@ body {
   .header__menu-item {
     margin-right: 1.5625rem/*25px*/;
   }
+  .header__buttons {
+    height: 100%;
+  }
   .header__button {
-    padding: 0 2.0625rem/*33px*/ 0 3.125rem/*50px*/;
+    padding: 0 3.125rem/*50px*/ 0 3.125rem/*50px*/;
+    height: inherit;
   }
 
   .nav-white .header__button {
-    padding: 1.25rem/*20px*/ 2.0625rem/*33px*/ 1.25rem/*20px*/ 3.125rem/*50px*/;
+    padding: 0 3.125rem/*50px*/ 0 3.125rem/*50px*/;
+    height: inherit;
   }
 
   .header__button .header__svg-phone {
@@ -529,9 +534,18 @@ body {
   .header {
     padding-top: 9.375rem/*150px*/;
   }
+  .header__nav {
+    height: 4.25rem/*68px*/;
+  }
+  .header__buttons {
+    height: 100%;
+  }
   .header__button {
-    padding: 1.25rem/*20px*/ 2.0625rem/*33px*/ 1.25rem/*20px*/ 3.125rem/*50px*/;
+    padding: 0 1.75rem/*28px*/ 0 1.75rem/*28px*/;
     transition: all 0.4s;
+  }
+  .nav-white .header__button {
+    padding: 0 1.75rem/*28px*/ 0 1.75rem/*28px*/;
   }
   .header__button .header__button-text {
     display: none;
@@ -650,9 +664,6 @@ body {
   }
   .header__content-button {
     width: 100%;
-  }
-  .header__nav {
-    height: 4.625rem/*74px*/;
   }
   .steps__container {
     padding: 0 8px;
