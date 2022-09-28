@@ -654,10 +654,10 @@ body {
     display: none;
   }
   .close-menu .line-top {
-    transform: rotate(45deg) translateY(12px);
+    transform: rotate(45deg) translateY(9px);
   }
   .close-menu .line-bottom {
-    transform: rotate(-45deg) translateY(-12px);
+    transform: rotate(-45deg) translateY(-9px);
   }
   .header__container {
     padding: 0 8px;
