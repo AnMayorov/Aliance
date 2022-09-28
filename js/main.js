@@ -1,5 +1,6 @@
 const header__nav = document.querySelector(".header__nav");
-const logo = document.querySelector(".logo__svg use");
+const logoWhite = document.querySelector(".logo-white");
+const logoBlack = document.querySelector(".logo-black");
 const mMenuToggle = document.querySelector(".mobile-toggle");
 const menu = document.querySelector(".mobile__menu");
 
@@ -18,11 +19,13 @@ const closeMenu = (event) => {  //функция закрытия меню
 
 const lightModeOn = (event) => {
   header__nav.classList.add("nav-white");
-  logo.href.baseVal = "img/sprite.svg#logo_black";
+  logoWhite.style.display = "none";
+  logoBlack.style.display = "block";
 }
 const lightModeOff = (event) => {
   header__nav.classList.remove("nav-white");
-  logo.href.baseVal = "img/sprite.svg#logo_white";
+  logoWhite.style.display = "block";
+  logoBlack.style.display = "none";
 }
 
 window.addEventListener('scroll', () => {

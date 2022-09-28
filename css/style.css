@@ -188,6 +188,9 @@ body {
   width: 8.75rem/*140px*/;
   height: 2.75rem/*44px*/;
 }
+.logo-black {
+  display: none;
+}
 .header__menu {
   flex: 1 1 auto;
   margin-left: 3.0625em/*49px*/;
