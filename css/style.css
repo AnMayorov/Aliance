@@ -326,7 +326,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   align-self: flex-start;
-  margin-right: 3.4375em/*55px*/;
+  margin-right: 3.43755em/*55px*/;
   min-height: 100%;
   max-width: 19.0625em/*305px*/;
 }
@@ -442,11 +442,9 @@ body {
   .header__slider-buttons {
     display: flex;
   }
-  .steps__container {
-    overflow: hidden;
-  }
+  
   .steps__list-item {
-    margin-right: 1.25em/*20px*/;
+    margin-right: 1.875em/*30px*/;
     max-width: 100%;
   }
   .steps__slider-buttons-box {
@@ -673,6 +671,9 @@ body {
   [class*="_container"] {
     max-width: 90%;
     margin: 0 auto;
+  }
+  .steps__list-item {
+    max-width: 96%;
   }
 }
 

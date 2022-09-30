@@ -61,7 +61,7 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-const steps = new Swiper('.steps__swiper', {
+const stepsSwiper = new Swiper('.steps__swiper', {
   speed: 400,
   slidesPerView: 1,
   navigation: {
@@ -76,7 +76,7 @@ const steps = new Swiper('.steps__swiper', {
       slidesPerView: 2,
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
     /*spaceBetween: 100,*/  // сейчас не нужно
   }
