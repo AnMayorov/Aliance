@@ -44,6 +44,9 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.slider-button-prev',
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1.3,
+    },
     576: {
       slidesPerView: 2,
     },
@@ -69,7 +72,10 @@ const stepsSwiper = new Swiper('.steps__swiper', {
     prevEl: '.slider-button-steps-prev',
   },
   breakpoints: {
-    485: {
+    320: {
+      slidesPerView: 1.07,
+    },
+    576: {
       slidesPerView: 2,
     },
     768: {
