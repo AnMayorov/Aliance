@@ -122,6 +122,9 @@ body {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .title {
   margin-bottom: 0.833em/*50px*/;
   font-family: 'Bebas Neue Regular', serif;
@@ -548,12 +551,20 @@ body {
 .marks__title {
   margin-bottom: 0.916666em/*55px*/;
 }
+.title-truncated {
+  display: none;
+}
 .marks__content {
 }
 .marks__link-left, 
 .marks__link-right {
   flex: 1 1 50%;
-  align-items: center;
+  grid-template-columns: 11.25rem 1fr;
+  grid-template-rows: auto 2fr;
+  grid-template-areas: "image subtitle subtitle"
+                       "image text text";
+  grid-column-gap: 3.0625em;
+  grid-row-gap: 0.625rem/*10px*/;
   padding: 3.125rem/*50px*/ 3.125rem/*50px*/ 2.5625rem/*41px*/ 3.125rem/*50px*/;
   min-height: 17.5rem/*280px*/;
   border: 1px solid var(--bg-steps-line);
@@ -571,7 +582,9 @@ body {
 }
 
 .marks__content-image {
-  margin-right: 3.0625em;/*49px*/
+  grid-area: image;
+  margin-left: -1px;
+  /*margin-right: 3.0625em;49px*/
 }
 .marks__icons {
   width: 11.25rem/*180px*/;
@@ -580,18 +593,21 @@ body {
   transition: fill 0.2s;
 }
 .marks__content-body {
-  flex-direction: column;
   margin-top: -1.8125em/*-29px*/;
   padding-right: 1.875rem/*30px*/;
 }
 .marks__content-subtitle {
-  margin-bottom: 0.3571428em/*10px*/;
+  grid-area: subtitle;
+  /*margin-bottom: 0.3571428em10px*/;
   font-size: 1.75rem/*28px*/;
   line-height: 160%;
   color: var(--2-color-txt);
   transition: color 0.2s;
 }
 .marks__content-text {
+  grid-area: text;
+  padding-right: 0.625rem/*10px*/;
+  line-height: 163%;
   color: var(--3-color-txt);
 }
 
@@ -1051,14 +1067,27 @@ body {
     margin-bottom: 1.7em/*17px*/;
     width: 10rem/*100px*/;
   }
-  .marks__title {
+  .title-full {
+    display: none;
+  }
+  .title-truncated{
+    display: flex;
     font-size: 3.6rem/*36px*/;
     line-height: 120%;
   }
   .marks__link-left, 
   .marks__link-right {
-    flex-direction: column;
-    align-items: center;
+    grid-column-gap: 1.6rem/*16px*/;
+    grid-row-gap: 1.5rem/*15px*/;
+    grid-template-areas: 
+    "image subtitle" 
+    "text text"
+    ;
+    padding-top: 2.9rem/*29px*/;
+    padding-left: 3rem/*30px*/;
+    min-height: 26.8rem/*268px*/;
+    /*flex-direction: column;
+    align-items: center;*/
   }
   /*--------------------*/
   .marks-link:hover {
@@ -1070,7 +1099,22 @@ body {
   .marks-link:hover .marks__content-subtitle {
     color: var(--2-color-txt);
   }
-  /*--------------------*/
+
+  .marks__icons {
+    width: 10rem/*100px*/;
+    height: 10rem/*100px*/;
+  }
+  .marks__content-subtitle {
+    font-size: 2rem/*20px*/;
+    line-height: 130%;
+  }
+  .marks__content-text {
+    margin-left: -2px;
+    padding: 0;
+    font-size: 1.4rem/*14px*/;
+    line-height: 158%;
+  }
+  /*----------
   .marks__content-image {
     margin: 0;
   }
@@ -1085,7 +1129,7 @@ body {
   }
   .marks__content-text {
     text-align: center;
-  }
+  }----------*/
 }
 
 /**footer************/
