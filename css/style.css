@@ -1109,7 +1109,7 @@ body {
     line-height: 130%;
   }
   .marks__content-text {
-    margin-left: -2px;
+    margin-left: -0.14rem/*-1.4px*/;
     padding: 0;
     font-size: 1.4rem/*14px*/;
     line-height: 158%;
