@@ -726,19 +726,18 @@ body {
   align-items: center;
   min-height: 10rem/*160px*/;
   border: 1px solid var(--bg-steps-line);
+  
+  
 }
 .clients__tile-img {
   max-width: 4.375rem/*70px*/;
   min-height: 4.375rem/*70px*/;
-  filter: grayscale(100%);
   transition: filter 0.2s ease, transform 0.2s ease;
+  filter: grayscale(100%);
 }
 .clents__tiles:hover .clients__tile-img {
   transform: translateY(-3px);
-  filter: grayscale(0);
-}
-.clents__tiles:active .clients__tile-img {
-  transform: translateY(0px);
+  filter: grayscale(0%);
 }
 
 
@@ -1050,11 +1049,7 @@ body {
   }
   .clents__tiles:hover .clients__tile-img {
     transform: none;
-    filter: grayscale(0);
-  }
-  .clents__tiles:active .clients__tile-img {
-    transform: translateY(2px);
-    filter: grayscale(0)
+    filter: grayscale();
   }
 }
 @media (max-width: 36em/*576px*/) {
