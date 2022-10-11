@@ -735,11 +735,13 @@ body {
 }
 .clents__tiles:hover .clients__tile-img {
   transform: translateY(-3px);
-  filter: grayscale(0%);
+  filter: grayscale(0);
 }
 .clents__tiles:active .clients__tile-img {
-  transform: translateY(3px);
+  transform: translateY(0px);
 }
+
+
 /************~Media~**************/
 @media (max-width: 120em/*1920px*/) {
   .mobile__menu {
@@ -1048,11 +1050,11 @@ body {
   }
   .clents__tiles:hover .clients__tile-img {
     transform: none;
-    filter: grayscale();
+    filter: grayscale(0);
   }
   .clents__tiles:active .clients__tile-img {
     transform: translateY(2px);
-    filter: grayscale(0%)
+    filter: grayscale(0)
   }
 }
 @media (max-width: 36em/*576px*/) {
