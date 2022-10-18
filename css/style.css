@@ -1036,7 +1036,7 @@ body {
 
 .middle {
   padding-top: 3.1875rem/*51px*/;
-  padding-bottom: 3.125rem/*50px*/;
+  padding-bottom: 2.625rem/*42px*/;
 }
 .middle__block-left {
   flex: 1 1 50%;
@@ -1066,7 +1066,7 @@ body {
 }
 .middle__block-right {
   flex: 1 1 50%;
-  margin-top: -27px;
+  margin-top: -3.3em/*-33px*/;
 }
 .middle__box {
   margin-right: 11.8125em/*189px*/;
