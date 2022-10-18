@@ -937,7 +937,7 @@ body {
 }
 .form__submit-wrapper {
   align-items: center;
-  min-height: 3.875rem/*62px*/;
+  min-height: 3.6875rem/*59px*/;
 }
 .form__button {
   flex-shrink: 0;
@@ -1037,7 +1037,7 @@ body {
 
 .middle {
   padding-top: 3.1875rem/*51px*/;
-  padding-bottom: 2.625rem/*42px*/;
+  padding-bottom: 2.75rem/*44px*/;
 }
 .middle__block-left {
   flex: 1 1 50%;
@@ -1092,8 +1092,8 @@ body {
 }
 
 .footer__lower {
-  padding-top: 1.3125rem/*21px*/;
-  padding-bottom: 1.1875rem/*19px*/;
+  padding-top: 1.25rem/*20px*/;
+  padding-bottom: 1.25rem/*20px*/;
   min-height: 3.6875rem/*59px*/;
   border-top: 1px solid var(--bg-steps-line);
 }
