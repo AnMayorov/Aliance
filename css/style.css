@@ -1066,7 +1066,7 @@ body {
 }
 .middle__block-right {
   flex: 1 1 50%;
-  margin-top: -3.3em/*-33px*/;
+  margin-top: -2.0625em/*-33px*/;
 }
 .middle__box {
   margin-right: 11.8125em/*189px*/;
