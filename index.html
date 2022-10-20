@@ -143,7 +143,7 @@
           <span class="header__number-phone">+7 (499) 686-10-14</span>
         </a>
 
-        <button class="header__button btn flex">
+        <button class="header__button btn flex" data-toggle="modal">
           <svg class="header__svg-phone">
             <use href="img/sprite.svg#phone"></use>
           </svg>
@@ -1025,6 +1025,63 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal flex">
+      <div class="modal__dialog">
+        <h2 class="modal__title title">
+          Есть вопросы?
+        </h2>
+
+        <a href="#" class="modal__close flex">
+          <svg class="modal__close-icon" width="24" height="24">
+            <use href="img/sprite.svg#modal_close"></use>
+          </svg>
+        </a>
+
+        <p class="modal__text">
+          Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+  
+        <form action="#" class="modal__form">
+          <div class="modal__input-wrapper flex">
+            <div class="modal__input-group flex">
+              <input 
+                class="modal__input" 
+                id="modal-user-name"
+                type="text" 
+                name="username" 
+                placeholder="">
+                <label class="modal__label" for="modal-user-name">Имя</label>
+            </div>
+            <div class="modal__input-group flex">
+              <input 
+                class="modal__input" 
+                id="modal-user-phon"
+                type="tel" 
+                name="userphon" 
+                placeholder="">
+                <label class="modal__label" for="modal-user-phon" >Номер телефона</label>
+            </div>
+          </div>
+
+          <div class="modal__submit-wrapper flex">
+            <button class="modal__button btn" type="submit">
+              Отправить заявку
+            </button>
+
+            <div class="modal__notify-box flex">
+              <svg class="modal__notify-icon">
+                <use href="img/sprite.svg#notify_form"></use>
+              </svg>
+
+              <p class="modal__notify-text">
+                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

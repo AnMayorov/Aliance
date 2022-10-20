@@ -105,3 +105,37 @@ const blogSwiper = new Swiper('.blog__swiper',{
     },
   }
 });
+
+const modal = document.querySelector(".modal");
+const modalToogle = document.querySelectorAll('[data-toggle=modal]');
+const modalClose = document.querySelector(".modal__close");
+
+
+modalToogle.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.classList.add("modal__open");
+  });
+});
+modalClose.addEventListener("click", (event) => {
+  event.preventDefault();
+  modal.classList.remove("modal__open");
+});
+
+modal.onclick = function(event) {
+  if ( event.target == modal ) {
+    modal.classList.remove("modal__open"); 
+  }
+};
+document.onkeydown = function(event) {
+  const key = event.key; 
+  if (key === "Escape") {
+    modal.classList.remove("modal__open");
+  }
+};
+
+/*
+
+  
+
+*/
