@@ -134,8 +134,3 @@ document.onkeydown = function(event) {
   }
 };
 
-/*
-
-  
-
-*/
