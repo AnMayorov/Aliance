@@ -127,7 +127,7 @@ modal.onclick = function(event) {
     modal.classList.remove("modal__open"); 
   }
 };
-document.onkeydown = function(event) {
+window.onkeydown = function(event) {
   const key = event.key; 
   if (key === "Escape") {
     modal.classList.remove("modal__open");
