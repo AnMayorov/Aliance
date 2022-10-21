@@ -107,6 +107,31 @@ const blogSwiper = new Swiper('.blog__swiper',{
 });
 
 const modal = document.querySelector(".modal");
+const modalDialog = document.querySelector(".modal__dialog");
+
+document.addEventListener("click", (event) => {
+  if (
+    event.target.dataset.toggle == "modal" ||
+    event.target.parentNode.dataset.toggle == "modal" || 
+    (!event.composedPath().includes(modalDialog) && 
+    modal.classList.contains("modal__open"))
+  ) {
+    event.preventDefault();
+    modal.classList.toggle("modal__open");
+  }
+});
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && 
+    modal.classList.contains ("modal__open")
+  ) {
+    modal.classList.toggle("modal__open");
+  }
+});
+
+
+
+/*
+
 const modalToogle = document.querySelectorAll('[data-toggle=modal]');
 const modalClose = document.querySelector(".modal__close");
 
@@ -134,3 +159,4 @@ window.onkeydown = function(event) {
   }
 };
 
+*/
