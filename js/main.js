@@ -3,6 +3,7 @@ const logoWhite = document.querySelector(".logo-white");
 const logoBlack = document.querySelector(".logo-black");
 const mMenuToggle = document.querySelector(".mobile-toggle");
 const menu = document.querySelector(".mobile__menu");
+const isFront = document.body.classList.contains("front-page");
 
 const openMenu = (event) => {  //функция открытия меню
   menu.classList.add("is-open"); //вешает класс is-open
@@ -19,17 +20,25 @@ const closeMenu = (event) => {  //функция закрытия меню
 
 const lightModeOn = (event) => {
   header__nav.classList.add("nav-white");
-  logoWhite.style.display = "none";
-  logoBlack.style.display = "block";
+  // logoWhite.style.display = "none";
+  // logoBlack.style.display = "block";
 }
 const lightModeOff = (event) => {
   header__nav.classList.remove("nav-white");
-  logoWhite.style.display = "block";
-  logoBlack.style.display = "none";
+  // logoWhite.style.display = "block";
+  // logoBlack.style.display = "none";
+}
+
+const changeNavHeight = (height) => {
+  header__nav.style.height = height;
 }
 
 window.addEventListener('scroll', () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  this.scrollY > 1 ? changeNavHeight("4.625rem") : changeNavHeight("5.875rem");
+
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 }); 
 mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
