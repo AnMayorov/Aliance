@@ -162,7 +162,7 @@
 
         <div class="header__content flex">
           <h1 class="header__title">
-            Комплексное обеспечение товарами и расходными материалами бизнеса
+            <?php echo "Комплексное обеспечение товарами и расходными материалами бизнеса" ?>
           </h1>
           <p class="header__text">
             Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
@@ -1010,7 +1010,7 @@
         <div class="footer__container lower flex">
           <div class="footer__legal flex">
             <p class="footer__copy">
-              &copy; 2022 «Aliance Production». Все права защищены.
+              &copy; <?php echo date('d.m.Y')?> «Aliance Production». Все права защищены.
             </p>
             <a href="#" class="footer__confidentiality">
               Политики конфиденциальности
