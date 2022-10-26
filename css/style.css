@@ -117,7 +117,8 @@ body {
 }
 .wrapper {
   flex-direction: column;
-  overflow: hidden;
+  min-height: 100%;
+  /* overflow: hidden; */
 }
 [class*="_container"] {
   margin: 0 auto;
@@ -1880,7 +1881,7 @@ body {
     line-height: 160%;
   }
   .header__features {
-    overflow: visible;
+    /* overflow: visible; */
     margin: 0;
   }
   .header__features-item {
@@ -2225,7 +2226,7 @@ body {
   }
   
   .form__wrapper {
-    max-width: 92%;
+    max-width: 93%;
     margin: 0 auto;
     padding: 47px 0px 50px 1px;
   }
@@ -2239,7 +2240,7 @@ body {
     line-height: 120%;
   }
   .form__text {
-    width: 100%;
+    max-width: 100%;
     font-size: 1.4rem/*14px*/;
     line-height: 160%;
   }
@@ -2543,5 +2544,17 @@ body {
   }
   .autohim__links {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 23.5em/*376px*/) {
+  .wrapper {
+    overflow: hidden;
+  }
+  .header__features {
+    overflow: visible;
+  }
+  .steps__swiper {
+    overflow: visible;
   }
 }
