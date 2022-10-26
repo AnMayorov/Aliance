@@ -109,6 +109,7 @@ h6 {
   font-style: normal;
 }
 
+
 body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
@@ -892,9 +893,11 @@ body {
   transition: max-width 0.3s ease, min-height 0.3s ease, left 0.3s ease;
 }
 .form__box {
+  flex-direction: column;
   max-width: 52.5rem/*840px*/;
 }
 .form__cooperation {
+  flex-direction: column;
   margin-bottom: 3.125em/*50px*/;
 }
 .form__title {
@@ -969,7 +972,7 @@ body {
   margin-left: 1.6875rem/*27px*/;
 }
 .form__notify-icon {
-  margin-right: 0.5625rem/*9*/;
+  margin-right: 0.5625rem/*9px*/;
   padding-top: 2px;
   width: 1.125rem/*18px*/;
   height: 1.0625rem/*17px*/;
@@ -2228,7 +2231,7 @@ body {
   }
   .form__cooperation {
     margin-bottom: 3em/*30px*/;
-    width: 34.5rem/*345px*/;
+    max-width: 34.5rem/*345px*/;
   }
   .form__title {
     margin-bottom: 0.333333em/*12px*/;
@@ -2272,6 +2275,7 @@ body {
     width: 100%;
   }
   .form__notify-icon {
+    flex-shrink: 0;
     margin-right: 0.8em/*8px*/;
     padding-bottom: 1px;
     width: 1.7rem/*17px*/;
