@@ -119,7 +119,7 @@
 
       <ul class="header__menu menu flex">
         <li class="header__menu-item flex">
-          <a href="/about.html" class="header__menu-link flex">О компании</a>
+          <a href="./about.php" class="header__menu-link flex">О компании</a>
         </li>
         <li class="header__menu-item flex">
           <a href="#" class="header__menu-link flex">Контрактное производство</a>
@@ -816,8 +816,11 @@
         </div>
       </section>
 
-      <section class="cta-form form">
-        <div class="form__wrapper container flex">
+      <?php include_once('footer.php');?>
+
+    <!-- 
+        <section class="cta-form form">
+          <div class="form__wrapper container flex">
           <img class="form__image" src="img/form_image/form_label_paint.png" alt="flacot">
 
           <div class="form__box flex">
@@ -830,25 +833,25 @@
               </p>
             </div>
             
-            <form class="form__cta" action="#">
+            <form class="form__cta" method="POST" action="handler.php">
               <div class="form__input-wrapper flex">
                 <div class="form__input-group flex">
                   <input 
-                    class="form__input" 
+                    class="form__input input-1" 
                     id="user-name"
                     type="text" 
                     name="username" 
-                    placeholder="">
-                    <label class="form__label" for="user-name">Имя</label>
+                    placeholder=" ">
+                    <label class="form__label label-1" for="user-name">Имя</label>
                 </div>
                 <div class="form__input-group flex">
                   <input 
-                    class="form__input" 
+                    class="form__input input-2" 
                     id="user-phon"
                     type="tel" 
                     name="userphon" 
-                    placeholder="">
-                    <label class="form__label" for="user-phon" >Номер телефона</label>
+                    placeholder=" ">
+                    <label class="form__label label-2" for="user-phon" >Номер телефона</label>
                 </div>
               </div>
 
@@ -869,11 +872,11 @@
               </div>
             </form>
           </div>
-        </div>
-      </section>
-    </main>
+          </div>
+        </section>
+      </main>
 
-    <footer class="footer">
+      <footer class="footer">
       <nav class="footer__nav nav flex">
         <div class="footer__container upper flex">
           <div class="footer__logo-links flex">
@@ -1026,9 +1029,9 @@
           </div>
         </div>
       </div>
-    </footer>
+      </footer>
 
-    <div class="modal flex">
+      <div class="modal flex">
       <div class="modal__dialog">
         <h2 class="modal__title title">
           Есть вопросы?
@@ -1048,21 +1051,21 @@
           <div class="modal__input-wrapper flex">
             <div class="modal__input-group flex">
               <input 
-                class="modal__input" 
+                class="modal__input input-1" 
                 id="modal-user-name"
                 type="text" 
                 name="username" 
                 placeholder="">
-                <label class="modal__label" for="modal-user-name">Имя</label>
+                <label class="modal__label label-1" for="modal-user-name">Имя</label>
             </div>
             <div class="modal__input-group flex">
               <input 
-                class="modal__input" 
+                class="modal__input input-2" 
                 id="modal-user-phon"
                 type="tel" 
                 name="userphon" 
                 placeholder="">
-                <label class="modal__label" for="modal-user-phon" >Номер телефона</label>
+                <label class="modal__label label-2" for="modal-user-phon" >Номер телефона</label>
             </div>
           </div>
 
@@ -1083,7 +1086,8 @@
           </div>
         </form>
       </div>
-    </div>
+      </div>
+    -->
   </div>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

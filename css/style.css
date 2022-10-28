@@ -931,19 +931,24 @@ body {
   height: 100%;
   border: 1px solid var(--border-color-input);
   background: transparent;
+  z-index: 0;
 }
+
+/* ----------------------- */
 .form__input:focus {
   border-color: var(--bg-btn);
 }
 .form__input:focus ~ .form__label, 
 .form__input:not(:placeholder-shown) 
-.form__input:not(:focus) ~ .form__label {
+.form__input:not(:focus) ~ .form__label { 
   top: -0.8125rem/*-13px*/;
   left: 1.25rem/*20px*/;
   padding: 0 0.625rem/*10px*/;
   font-size: 0.625rem/*10px*/;
   background: inherit;
 }
+/* ----------------------- */
+
 .form__label {
   position: absolute;
   top: 1.3125rem/*21px*/;
