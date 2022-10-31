@@ -21,7 +21,9 @@
                     id="user-name"
                     type="text" 
                     name="username" 
-                    placeholder=" ">
+                    placeholder=" "
+                    maxlength="100"
+                    required>
                     <label class="form__label label-1" for="user-name">Имя</label>
                 </div>
                 <div class="form__input-group flex">
@@ -30,7 +32,9 @@
                     id="user-phon"
                     type="tel" 
                     name="userphon" 
-                    placeholder=" ">
+                    placeholder=" "
+                    maxlength="30"
+                    required>
                     <label class="form__label label-2" for="user-phon" >Номер телефона</label>
                 </div>
               </div>
