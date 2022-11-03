@@ -816,7 +816,12 @@
         </div>
       </section>
 
+
       <?php include_once('footer.php');?>
+
+      
+
+    
 
     <!-- 
         <section class="cta-form form">
@@ -1088,9 +1093,7 @@
       </div>
       </div>
     -->
-  </div>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  
 </body>
 
 </html>

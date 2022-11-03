@@ -949,6 +949,20 @@ body {
 }
 /* ----------------------- */
 
+.form__input.is-invalid {
+  border: 1px solid red;
+}
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 0.8rem;
+  transform: translateY(-50%);
+  background: inherit;
+}
+
 .form__label {
   position: absolute;
   top: 1.3125rem/*21px*/;
@@ -1238,8 +1252,7 @@ body {
   border-color: var(--bg-btn);
 }
 .modal__input:focus ~ .modal__label, 
-.modal__input:not(:placeholder-shown) 
-.modal__input:not(:focus) ~ .modal__label {
+.modal__input:not(:placeholder-shown).modal__input:not(:focus) ~ .modal__label {
   top: -0.8125rem/*-13px*/;
   left: 1.25rem/*20px*/;
   padding: 0 0.625rem/*10px*/;
@@ -1282,6 +1295,75 @@ body {
   line-height: 160%;
   color: var(--3-color-txt);
 }
+
+.thx__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--bg-modal);
+  transform: translateX(-100%);
+  z-index: 51;
+  cursor: pointer;
+  overflow: auto;
+}
+.thx__modal.thx__open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+.thx__modal.thx__open  .thx__dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+.thx__dialog {
+  margin: auto;
+  padding: 2.25rem/*36px*/ 3.125rem/*50px*/;
+  max-width: 28.75rem/*460px*/;
+  min-height: 43.4375rem/*695px*/;
+  background: var(--1-color-txt);
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: transform 0.3s, opacity 0.3s;
+  cursor: default;
+}
+.thx__bg {
+  position: relative;
+  margin-bottom: 1.8125em/*29px*/;
+  max-width: 22.5rem/*360px*/;
+  min-height: 19.375rem/*310px*/;
+  background: url(../img/thx_image/thanks_img.jpg) 50% / cover no-repeat;
+}
+.thx__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.thx__title {
+  margin-bottom: 0.5em/*24px*/;
+  font-size: 3rem/*48px*/;
+  line-height: 120%;
+}
+.thx__text {
+  margin-bottom: 2em/*32px*/;
+  line-height: 160%;
+  color: var(--3-color-txt);
+}
+.thx__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.875rem/*62px*/;
+  max-width: 22.5rem/*360px*/;
+  font-weight: 700;
+  font-size: 0.875rem/*14px*/;
+  line-height: 160%;
+  color: var(--1-color-txt);
+}
+
 
 /**internal pages************/
 
@@ -2263,8 +2345,7 @@ body {
     line-height: 160%;
   }
   .form__input:focus ~ .form__label, 
-  .form__input:not(:placeholder-shown) 
-  .form__input:not(:focus) ~ .form__label {
+  .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
     top: -0.9rem/*-9px*/;
     left: 2rem/*20px*/;
     padding: 0 1rem/*10px*/;
@@ -2475,8 +2556,8 @@ body {
     font-size: 1.4rem/*14px*/;
     line-height: 160%;
   }
-  .modal__input:focus ~ .modal__label, 
-  .modal__input:not(:placeholder-shown) .modal__input:not(:focus) ~ .modal__label {
+
+  .modal__input:focus ~ .modal__label, .modal__input:not(:placeholder-shown).modal__input:not(:focus) ~ .modal__label {
     top: -8px;
     left: 2rem/*20px*/;
     padding: 0 0 0 0.6rem/*6px*/;
@@ -2506,6 +2587,38 @@ body {
   }
   .nav-white .close-menu {
     height: 48px;
+  }
+
+  .thx__dialog {
+    padding: 3rem/*30px*/;
+    max-width: 34.5rem/*345px*/;
+    min-height: 55.4rem/*554px*/;
+  }
+  .thx__bg {
+    margin-bottom: 1.6em/*16px*/;
+    max-width: 28.5rem/*285px*/;
+    min-height: 24.5rem/*245px*/;
+  }
+  .thx__close {
+    top: 0;
+    right: 0;
+  }
+  .thx__title {
+    margin-bottom: 0.375em/*15px*/;
+    font-size: 4rem/*40px*/;
+    line-height: 120%;
+  }
+  .thx__text {
+    margin-bottom: 1.285714em/*18px*/;
+    font-size: 1.4rem/*14px*/;
+    line-height: 160%;
+    color: var(--3-color-txt);
+  }
+  .thx__button {
+    max-width: 28.5rem/*285px*/;
+    min-height: 6.2rem/*62px*/;
+    font-size: 1.4rem/*14px*/;
+    line-height: 160%;
   }
 
   /**internal pages************/

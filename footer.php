@@ -13,7 +13,7 @@
               </p>
             </div>
             
-            <form class="form__cta" method="POST" action="handler.php">
+            <form class="form__cta form" method="POST" action="handler.php">
               <div class="form__input-wrapper flex">
                 <div class="form__input-group flex">
                   <input 
@@ -28,19 +28,19 @@
                 </div>
                 <div class="form__input-group flex">
                   <input 
-                    class="form__input input-2" 
-                    id="user-phon"
+                    class="form__input tel input-2" 
+                    id="user-phone"
                     type="tel" 
-                    name="userphon" 
+                    name="userphone" 
                     placeholder=" "
                     maxlength="30"
                     required>
-                    <label class="form__label label-2" for="user-phon" >Номер телефона</label>
+                    <label class="form__label label-2" for="user-phone" >Номер телефона</label>
                 </div>
               </div>
 
               <div class="form__submit-wrapper flex">
-                <button class="form__button btn" type="submit">
+                <button class="form__button btn" data-toggle="thx" type="submit">
                   Отправить заявку
                 </button>
 
@@ -220,55 +220,78 @@
         <h2 class="modal__title title">
           Есть вопросы?
         </h2>
-
+      
         <a href="#" class="modal__close flex" data-toggle="modal">
           <svg class="modal__close-icon" width="24" height="24">
             <use href="img/sprite.svg#modal_close"></use>
           </svg>
         </a>
-
+      
         <p class="modal__text">
-          Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+          Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже
+          в самых сложных случаях!
         </p>
-  
-        <form action="#" class="modal__form">
+      
+        <form action="handler.php" method="POST" class="modal__form form">
           <div class="modal__input-wrapper flex">
             <div class="modal__input-group flex">
-              <input 
-                class="modal__input" 
-                id="modal-user-name"
-                type="text" 
-                name="username" 
-                placeholder="">
-                <label class="modal__label" for="modal-user-name">Имя</label>
+              <input class="modal__input" id="modal-user-name" type="text" name="username" placeholder="" maxlength="100"
+              required>
+              <label class="modal__label" for="modal-user-name">Имя</label>
             </div>
             <div class="modal__input-group flex">
-              <input 
-                class="modal__input" 
-                id="modal-user-phon"
-                type="tel" 
-                name="userphon" 
-                placeholder="">
-                <label class="modal__label" for="modal-user-phon" >Номер телефона</label>
+              <input class="modal__input" id="modal-user-phone" type="tel" name="userphone" placeholder="" maxlength="30"
+              required>
+              <label class="modal__label" for="modal-user-phone">Номер телефона</label>
             </div>
           </div>
-
+      
           <div class="modal__submit-wrapper flex">
-            <button class="modal__button btn" type="submit">
+            <button class="modal__button btn" type="submit" data-toggle="thx">
               Отправить заявку
             </button>
-
+      
             <div class="modal__notify-box flex">
               <svg class="modal__notify-icon">
                 <use href="img/sprite.svg#notify_form"></use>
               </svg>
-
+      
               <p class="modal__notify-text">
-                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
+                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность
+                информации!
               </p>
             </div>
           </div>
         </form>
       </div>
     </div>
+
+    <div class="thx thx__modal  flex">
+      <div class="thx__dialog">
+        <div class="thx__bg">
+          <a href="#" class="modal__close thx__close flex" data-toggle="thx">
+            <svg class="modal__close-icon" width="24" height="24">
+              <use href="img/sprite.svg#modal_close"></use>
+            </svg>
+          </a>
+        </div>
+          
+        <h2 class="thx__title title">
+          Спасибо за заявку!
+        </h2>
+  
+        <p class="thx__text">
+          Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+    
+        <a href="#" class="thx__button btn">
+          Вернуться на главную
+        </a>
+      </div>
+    </div>
+
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
+    <script src="js/main.js"></script>
       
