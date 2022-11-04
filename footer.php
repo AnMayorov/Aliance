@@ -40,7 +40,7 @@
               </div>
 
               <div class="form__submit-wrapper flex">
-                <button class="form__button btn" data-toggle="thx" type="submit">
+                <button class="form__button btn"  type="submit">
                   Отправить заявку
                 </button>
 
@@ -236,7 +236,7 @@
           <div class="modal__input-wrapper flex">
             <div class="modal__input-group flex">
               <input 
-                class="modal__input phone-mask" 
+                class="modal__input" 
                 id="modal-user-name" 
                 type="text" 
                 name="username" 

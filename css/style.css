@@ -1251,8 +1251,7 @@ body {
 .modal__input:focus {
   border-color: var(--bg-btn);
 }
-.modal__input:focus ~ .modal__label, 
-.modal__input:not(:placeholder-shown).modal__input:not(:focus) ~ .modal__label {
+.modal__input:focus ~ .modal__label, .modal__input:not(:placeholder-shown).modal__input:not(:focus) ~ .modal__label {
   top: -0.8125rem/*-13px*/;
   left: 1.25rem/*20px*/;
   padding: 0 0.625rem/*10px*/;
@@ -2344,8 +2343,7 @@ body {
     font-size: 1.4rem/*14px*/;
     line-height: 160%;
   }
-  .form__input:focus ~ .form__label, 
-  .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
     top: -0.9rem/*-9px*/;
     left: 2rem/*20px*/;
     padding: 0 1rem/*10px*/;

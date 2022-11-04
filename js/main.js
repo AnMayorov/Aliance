@@ -196,7 +196,7 @@ forms.forEach((form) => {
       }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена!");
+            thx.classList.add("thx__open"); // alert("Форма отправлена!");
           } else {
             alert("Ошибка. Текст ошибки: " .response.statusText);
           }
