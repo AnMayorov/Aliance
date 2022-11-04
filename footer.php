@@ -28,7 +28,7 @@
                 </div>
                 <div class="form__input-group flex">
                   <input 
-                    class="form__input tel input-2" 
+                    class="form__input phone-mask input-2" 
                     id="user-phone"
                     type="tel" 
                     name="userphone" 
@@ -235,19 +235,31 @@
         <form action="handler.php" method="POST" class="modal__form form">
           <div class="modal__input-wrapper flex">
             <div class="modal__input-group flex">
-              <input class="modal__input" id="modal-user-name" type="text" name="username" placeholder="" maxlength="100"
-              required>
+              <input 
+                class="modal__input phone-mask" 
+                id="modal-user-name" 
+                type="text" 
+                name="username" 
+                placeholder="" 
+                maxlength="100"
+                required>
               <label class="modal__label" for="modal-user-name">Имя</label>
             </div>
             <div class="modal__input-group flex">
-              <input class="modal__input" id="modal-user-phone" type="tel" name="userphone" placeholder="" maxlength="30"
+              <input 
+              class="modal__input phone-mask" 
+              id="modal-user-phone" 
+              type="tel" 
+              name="userphone" 
+              placeholder="" 
+              maxlength="30"
               required>
               <label class="modal__label" for="modal-user-phone">Номер телефона</label>
             </div>
           </div>
       
           <div class="modal__submit-wrapper flex">
-            <button class="modal__button btn" type="submit" data-toggle="thx">
+            <button class="modal__button btn" type="submit" data-toggle="">
               Отправить заявку
             </button>
       
