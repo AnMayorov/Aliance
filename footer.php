@@ -40,7 +40,7 @@
               </div>
 
               <div class="form__submit-wrapper flex">
-                <button class="form__button btn"  type="submit">
+                <button class="form__button btn" type="submit">
                   Отправить заявку
                 </button>
 
