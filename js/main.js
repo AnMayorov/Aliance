@@ -116,50 +116,33 @@ const blogSwiper = new Swiper('.blog__swiper',{
 });
 
 
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal__dialog");
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" || 
-    (!event.composedPath().includes(modalDialog) && 
-    modal.classList.contains("modal__open"))
-  ) {
+
+let currentModal;
+let modalDialog;
+let alertModal = document.querySelector("#alert-modal");
+
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.toggle("modal__open");
-  }
-});
+    currentModal = document.querySelector(button.dataset.target);
+    currentModal.classList.toggle("modal__open");
+    modalDialog = currentModal.querySelector(".modal__dialog");
+    currentModal.addEventListener("click", event => {
+      if (!event.composedPath().includes(modalDialog)) {
+        currentModal.classList.remove("modal__open");
+      }
+    });
+  });
+}); 
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && 
-    modal.classList.contains ("modal__open")
-  ) {
-    modal.classList.toggle("modal__open");
-  }
-});
+    if (event.key == "Escape" && currentModal.classList.contains ("modal__open")
+    ) {
+      currentModal.classList.toggle("modal__open");
+    }
+  });
 
-
-const thx = document.querySelector(".thx");
-const thxDialog = document.querySelector(".thx__dialog");
-
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "thx" ||
-    event.target.parentNode.dataset.toggle == "thx" || 
-    (!event.composedPath().includes(thxDialog) && 
-    thx.classList.contains("thx__open"))
-  ) {
-    event.preventDefault();
-    thx.classList.toggle("thx__open");
-  }
-});
-document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && 
-    thx.classList.contains ("thx__open")
-  ) {
-    thx.classList.toggle("thx__open");
-  }
-});
 
 /* Верификация полей ввода */
 const forms = document.querySelectorAll("form"); 
@@ -196,7 +179,15 @@ forms.forEach((form) => {
       }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            thx.classList.add("thx__open"); // alert("Форма отправлена!");
+            currentModal.classList.remove("modal__open"); 
+            alertModal.classList.add("modal__open");
+            currentModal = alertModal; 
+            modalDialog = currentModal.querySelector(".modal__dialog");
+            currentModal.addEventListener("click", event => {
+              if (!event.composedPath().includes(modalDialog)) {
+                currentModal.classList.remove("modal__open");
+              }
+            });
           } else {
             alert("Ошибка. Текст ошибки: " .response.statusText);
           }
@@ -283,12 +274,48 @@ document.addEventListener("input", (e) => {
 
 
 
+// document.addEventListener("click", (event) => {
+//   if (
+//     event.target.dataset.toggle == "modal" ||
+//     event.target.parentNode.dataset.toggle == "modal" || 
+//     (!event.composedPath().includes(modalDialog) && 
+//     currentModal.classList.contains("modal__open"))
+//   ) {
+//     event.preventDefault();
+//     currentModal.classList.toggle("modal__open");
+//   }
+// });
+// document.addEventListener("keyup", (event) => {
+//   if (event.key == "Escape" && 
+//     currentModal.classList.contains ("modal__open")
+//   ) {
+//     currentModal.classList.toggle("modal__open");
+//   }
+// });
 
 
+// const thx = document.querySelector(".thx");
+// const thxDialog = document.querySelector(".thx__dialog");
 
-
-
-
+// document.addEventListener("click", (event) => {
+//   if (
+//     event.target.dataset.toggle == "thx" ||
+//     event.target.parentNode.dataset.toggle == "thx" || 
+//     (!event.composedPath().includes(thxDialog) && 
+//     thx.classList.contains("thx__open"))
+//   ) {
+//     event.preventDefault();
+//     thx.classList.toggle("thx__open");
+//   }
+// });
+// document.addEventListener("keyup", (event) => {
+//   if (event.key == "Escape" && 
+//     thx.classList.contains ("thx__open")
+//   ) {
+//     thx.classList.toggle("thx__open");
+//   }
+// });
+//thx.classList.add("thx__open");  alert("Форма отправлена!");
 
 
 

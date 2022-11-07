@@ -215,13 +215,13 @@
       </div>
     </footer>
 
-    <div class="modal flex">
+    <div class="modal flex" id="feedback-modal">
       <div class="modal__dialog">
         <h2 class="modal__title title">
           Есть вопросы?
         </h2>
       
-        <a href="#" class="modal__close flex" data-toggle="modal">
+        <a href="#" class="modal__close flex" data-toggle="modal" data-target="#feedback-modal">
           <svg class="modal__close-icon" width="24" height="24">
             <use href="img/sprite.svg#modal_close"></use>
           </svg>
@@ -278,10 +278,10 @@
       </div>
     </div>
 
-    <div class="thx thx__modal  flex">
-      <div class="thx__dialog">
+    <div class="thx thx__modal modal flex" id="alert-modal">
+      <div class="thx__dialog modal__dialog"> 
         <div class="thx__bg">
-          <a href="#" class="modal__close thx__close flex" data-toggle="thx">
+          <a href="#" class="modal__close thx__close flex" data-toggle="modal" data-target="#alert-modal">
             <svg class="modal__close-icon" width="24" height="24">
               <use href="img/sprite.svg#modal_close"></use>
             </svg>

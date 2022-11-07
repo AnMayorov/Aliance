@@ -1309,12 +1309,12 @@ body {
   cursor: pointer;
   overflow: auto;
 }
-.thx__modal.thx__open {
+.thx__modal.modal__open {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
 }
-.thx__modal.thx__open  .thx__dialog {
+.thx__modal.modal__open .modal__dialog {
   transform: translateY(0);
   opacity: 1;
 }

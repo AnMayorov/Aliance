@@ -144,7 +144,7 @@
           <span class="header__number-phone">+7 (499) 686-10-14</span>
         </a>
 
-        <button class="header__button btn flex" data-toggle="modal">
+        <button class="header__button btn flex" data-toggle="modal" data-target="#feedback-modal">
           <svg class="header__svg-phone">
             <use href="img/sprite.svg#phone"></use>
           </svg>
