@@ -118,34 +118,46 @@ const blogSwiper = new Swiper('.blog__swiper',{
 
 
 
-let currentModal;
-let modalDialog;
-let alertModal = document.querySelector("#alert-modal");
+let currentModal; //текуще модальное окно
+let modalDialog;  //белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal");  //окно с предупреждением
 
-const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");  //переключатели(кнопки) модальных окон
 modalButtons.forEach((button) => {
+  //клик по переключателю
   button.addEventListener("click", (event) => {
     event.preventDefault();
+    //определяем текущее открытое окно
     currentModal = document.querySelector(button.dataset.target);
+
+    //открываем текущее окно
     currentModal.classList.toggle("modal__open");
+
+    //назначаем диалоговое окно
     modalDialog = currentModal.querySelector(".modal__dialog");
+
+    //отслеживаем клик по окну и пустым областям
     currentModal.addEventListener("click", event => {
+      //если клик в пустую область ...
       if (!event.composedPath().includes(modalDialog)) {
+        //... то закрываем окно
         currentModal.classList.remove("modal__open");
       }
     });
   });
 }); 
+//ловим событие клика по кнопке
 document.addEventListener("keyup", (event) => {
-    if (event.key == "Escape" && currentModal.classList.contains ("modal__open")
-    ) {
+    //проверяем что это Escape и текущее окно открыто 
+    if (event.key == "Escape" && currentModal.classList.contains ("modal__open")) {
+      //закрываем текущее окно
       currentModal.classList.toggle("modal__open");
     }
   });
 
 
 /* Верификация полей ввода */
-const forms = document.querySelectorAll("form"); 
+const forms = document.querySelectorAll("form");  //собираем все формы
 forms.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
@@ -167,7 +179,13 @@ forms.forEach((form) => {
       rule: "required",
       errorMessage: "Укажите телефон",
     },
+    {
+      rule:"minLength",
+      value: 18,
+      errorMessage: "Укажите номер полностью",
+    },
   ])
+
   /* Отправка данных на сервер */
   .onSuccess((event) => {
     const thisForm = event.target; //наша форма
@@ -179,12 +197,19 @@ forms.forEach((form) => {
       }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            currentModal.classList.remove("modal__open"); 
-            alertModal.classList.add("modal__open");
+            if (currentModal) {
+              currentModal.classList.remove("modal__open");
+            }
+            alertModal.classList.add("modal__open");  
             currentModal = alertModal; 
             modalDialog = currentModal.querySelector(".modal__dialog");
+
+            //отслеживаем клик по окну и пустым областям
             currentModal.addEventListener("click", event => {
+              //ксли клик в пустую область ...
               if (!event.composedPath().includes(modalDialog)) {
+
+                //... то закрываем окно
                 currentModal.classList.remove("modal__open");
               }
             });
@@ -215,9 +240,8 @@ const prefixNumber = (str) => {
   /* в других случаях просто 7 (  */
   return "7 (";
 };
- /* профикс в любом раскладе будет +7 () */
+ /* префикс в любом раскладе будет +7 () */
 
-// ======================================
 /* Ловим события ввода в любом поле */
 document.addEventListener("input", (e) => {
   /* Проверяем, что это поле имеет класс phone-mask */
@@ -240,7 +264,6 @@ document.addEventListener("input", (e) => {
       result = "+";
     }
 
-    //
     /* Запускаем цикл, где переберем каждую цифру от 0 до 11 */
     for (let i = 0; i < value.length && i < numberLength; i++) {
       switch (i) {
