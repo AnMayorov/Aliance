@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
+    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Контакты - Aliance production</title>
+  </head>
+
+<body>
+  <div class="wrapper about-wrap">
+    <div class="mobile__menu">
+      <ul class="mobile__menu-list flex">
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">О компании</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Контрактное производство</a>
+
+          <ul class="mobile__submenu flex">
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Автомобильная химия</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Бытовая химия</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Дезинфицирующие средства</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Пищевые аэрозоли</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Косметическая продукция</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Краски аэрозольные</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Собственные торговые марки</a>
+
+          <ul class="mobile__submenu">
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Автохимия AG-Tech</a>
+            </li>
+            <li class="mobile__submenu-item">
+              <a href="#" class="mobile__submenu-link">Автохимия AP</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Новости</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a href="#" class="mobile__menu-link">Контакты</a>
+        </li>
+      </ul>
+
+      <a href="tel:+74996861014" class="mobile__phone">+7 (499) 686-10-14</a>
+
+      <ul class="mobile__info-list flex">
+        <li class="mobile__info-item">
+          <a href="#" class="mobile__info-link flex">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_check"></use>
+            </svg>
+            <address class="mobile__info-address">г. Мосвка, Холодильный пер. 4к1с8</address>
+          </a>
+        </li>
+        <li class="mobile__info-item">
+          <a href="mailto:a.dragunov@tdaliance.ru" class="mobile__info-link flex">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_mail"></use>
+            </svg>
+            <span class="mobile__info-span">a.dragunov@tdaliance.ru</span>
+          </a>
+        </li>
+        <li class="mobile__info-item info flex">
+          <a class="info__link-vk" href="#">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_vk"></use>
+            </svg>
+          </a>
+          <a class="info__link-inst" href="#">
+            <svg class="mobile__svg" width="24" height="24">
+              <use href="img/sprite.svg#address_inst"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="header__nav about-nav nav-white flex">
+      <a href="#" class="header__mobile mobile-toggle flex">
+        <div class="mobile__line line-top"></div>
+        <div class="mobile__line line-between"></div>
+        <div class="mobile__line line-bottom"></div>
+      </a>
+
+      <a href="./" class="header__logo logo flex">
+        <svg class="logo__svg logo-white">
+          <use href="img/sprite.svg#logo_white"></use>
+        </svg>
+        <svg class="logo__svg logo-black">
+          <use href="img/sprite.svg#logo_black"></use>
+        </svg>
+      </a>
+
+      <ul class="header__menu menu flex">
+        <li class="header__menu-item flex">
+          <a href="#" class="header__menu-link flex">О компании</a>
+        </li>
+        <li class="header__menu-item flex">
+          <a href="#" class="header__menu-link flex">Контрактное производство</a>
+        </li>
+        <li class="header__menu-item flex">
+          <a href="#" class="header__menu-link flex">
+            Собственные торговые марки
+          </a>
+        </li>
+        <li class="header__menu-item flex">
+          <a href="#" class="header__menu-link flex">Новости</a>
+        </li>
+        <li class="header__menu-item flex">
+          <a href="#" class="header__menu-link flex">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="header__buttons flex">
+        <a href="tel:+74996861014" class="header__link-phone flex">
+          <svg class="header__svg-phone">
+            <use href="img/sprite.svg#phone"></use>
+          </svg>
+          <span class="header__number-phone">+7 (499) 686-10-14</span>
+        </a>
+
+        <button class="header__button btn flex" data-toggle="modal">
+          <svg class="header__svg-phone">
+            <use href="img/sprite.svg#phone"></use>
+          </svg>
+          <span class="header__button-text">
+            Получить консультацию
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="contacts__header header-in-pages">
+      <div class="header__container contacts-container container-in-pages">
+        <div class="contacts__seporator seporator seporator-in-pages"></div>
+        <h1 class="contacts__title title-in-pages title">
+          Контакты
+        </h1>
+        <div class="contacts__links links-in-pages flex">
+          <a class="contacts__link link-in-main link-pages" href="#">
+            Главная
+          </a>
+          <div class="contacts__line line-in-pages"></div>
+          <a class="contacts__link link-in-page link-pages" href="#">
+            Контакты
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="cta-form form">
+        <div class="form__wrapper container flex">
+          <img class="form__image" src="img/form_image/form_label_paint.png" alt="flacot">
+
+          <div class="form__box">
+            <div class="form__cooperation">
+              <h2 class="form__title title">
+                Хотите сотрудничать?
+              </h2>
+              <p class="form__text">
+                Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+              </p>
+            </div>
+            
+            <form class="form__cta" action="#">
+              <div class="form__input-wrapper flex">
+                <div class="form__input-group flex">
+                  <input 
+                    class="form__input" 
+                    id="user-name"
+                    type="text" 
+                    name="username" 
+                    placeholder="">
+                    <label class="form__label" for="user-name">Имя</label>
+                </div>
+                <div class="form__input-group flex">
+                  <input 
+                    class="form__input" 
+                    id="user-phon"
+                    type="tel" 
+                    name="userphon" 
+                    placeholder="">
+                    <label class="form__label" for="user-phon" >Номер телефона</label>
+                </div>
+              </div>
+
+              <div class="form__submit-wrapper flex">
+                <button class="form__button btn" type="submit">
+                  Отправить заявку
+                </button>
+
+                <div class="form__notify-box flex">
+                  <svg class="form__notify-icon">
+                    <use href="img/sprite.svg#notify_form"></use>
+                  </svg>
+
+                  <p class="form__notify-text">
+                    Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer__nav nav flex">
+        <div class="footer__container upper flex">
+          <div class="footer__logo-links flex">
+            <a class="footer__logo flex" href="#">
+              <svg class="footer__logo-svg">
+                <use href="img/sprite.svg#footer_logo"></use>
+              </svg>
+            </a>
+        
+            <a class="footer__link-phone" href="tel:+74996861014">
+              +7 (499) 686-10-14
+            </a>
+          </div>
+
+          <ul class="footer__nav-list flex">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link flex" href="#">
+                <svg class="footer__nav-icon">
+                  <use href="img/sprite.svg#address_check"></use>
+                </svg>
+                <address class="footer__nav-address">
+                  г. Мосвка, Холодильный пер. 4к1с8
+                </address>
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link flex" href="#">
+                <svg class="footer__nav-icon">
+                  <use href="img/sprite.svg#address_mail"></use>
+                </svg>
+                <span class="footer__nav-mail">
+                  a.dragunov@tdaliance.ru
+                </span>
+              </a>
+            </li>
+            <li class="footer__nav-item flex">
+              <a class="footer__nav-link link-vk flex" href="#">
+                <svg class="footer__nav-icon">
+                  <use href="img/sprite.svg#address_vk"></use>
+                </svg>
+              </a>
+              <a class="footer__nav-link flex" href="#">
+                <svg class="footer__nav-icon">
+                  <use href="img/sprite.svg#address_inst"></use>
+                </svg>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer__container middle flex">
+        <div class="middle__block-left">
+          <h2 class="middle__title">
+            Контрактное производство
+          </h2>
+
+          <ul class="middle__list">
+            <li class="middle__item">
+              <a href="#" class="middle__item-link">
+                Автомобильная химия
+              </a>
+            </li>
+            <li class="middle__item">
+              <a href="#" class="middle__item-link">
+                Бытовая химия
+              </a>
+            </li>
+            <li class="middle__item">
+              <a href="#" class="middle__item-link">
+                Дезинфицирующие средства
+              </a>
+            </li>
+            <li class="middle__item item-col-2">
+              <a href="#" class="middle__item-link">
+                Пищевые аэрозоли
+              </a>
+            </li>
+            <li class="middle__item item-col-2">
+              <a href="#" class="middle__item-link">
+                Косметическая продукция
+              </a>
+            </li>
+            <li class="middle__item item-col-2">
+              <a href="#" class="middle__item-link">
+                Краски аэрозольные
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="middle__block-right flex">
+          <div class="middle__box">
+            <h2 class="middle__title">
+              Собственные марки
+            </h2>
+  
+            <ul class="middle__list right-list">
+              <li class="middle__item">
+                <a href="#" class="middle__item-link">
+                  Автохимия AG-Tech
+                </a>
+              </li>
+              <li class="middle__item">
+                <a href="#" class="middle__item-link">
+                  Автохимия AP
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="middle__bold-list">
+            <li class="middle__bold-item bold-item-1">
+              <a href="#" class="middle__bold-link">
+                О компании
+              </a>
+            </li>
+            <li class="middle__bold-item bold-item-2">
+              <a href="#" class="middle__bold-link">
+                Новости
+              </a>
+            </li>
+            <li class="middle__bold-item bold-item-3">
+              <a href="#" class="middle__bold-link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__lower">
+        <div class="footer__container lower flex">
+          <div class="footer__legal flex">
+            <p class="footer__copy">
+              &copy; 2022 «Aliance Production». Все права защищены.
+            </p>
+            <a href="#" class="footer__confidentiality">
+              Политики конфиденциальности
+            </a>
+          </div>
+
+          <div class="footer__author flex">
+            <span class="footer__made-in">Сделано в</span>
+            <span class="footer__dev">Дизайн и разработка:</span>
+            <svg class="footer__author-icon">
+              <use href="img/sprite.svg#footer_ruso"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal flex">
+      <div class="modal__dialog">
+        <h2 class="modal__title title">
+          Есть вопросы?
+        </h2>
+
+        <a href="#" class="modal__close flex" data-toggle="modal">
+          <svg class="modal__close-icon" width="24" height="24">
+            <use href="img/sprite.svg#modal_close"></use>
+          </svg>
+        </a>
+
+        <p class="modal__text">
+          Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+  
+        <form action="#" class="modal__form">
+          <div class="modal__input-wrapper flex">
+            <div class="modal__input-group flex">
+              <input 
+                class="modal__input" 
+                id="modal-user-name"
+                type="text" 
+                name="username" 
+                placeholder="">
+                <label class="modal__label" for="modal-user-name">Имя</label>
+            </div>
+            <div class="modal__input-group flex">
+              <input 
+                class="modal__input" 
+                id="modal-user-phon"
+                type="tel" 
+                name="userphon" 
+                placeholder="">
+                <label class="modal__label" for="modal-user-phon" >Номер телефона</label>
+            </div>
+          </div>
+
+          <div class="modal__submit-wrapper flex">
+            <button class="modal__button btn" type="submit">
+              Отправить заявку
+            </button>
+
+            <div class="modal__notify-box flex">
+              <svg class="modal__notify-icon">
+                <use href="img/sprite.svg#notify_form"></use>
+              </svg>
+
+              <p class="modal__notify-text">
+                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

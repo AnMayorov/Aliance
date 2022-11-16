@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
-  <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
-  <link type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="shortcut icon" href="img/favicon_alianse.ico"></link>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    /*! modernizr 3.6.0 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-webp-setclasses !*/
+    !function(e,n,A){function o(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function t(e,n){return typeof e===n}function a(){var e,n,A,o,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(o=t(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=o:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=o),s.push((o?"":"no-")+l.join("-"))}}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var t=e.split("."),a=Modernizr[t[0]];if(2==t.length&&(a=a[t[1]]),"undefined"!=typeof a)return Modernizr;n="function"==typeof n?n():n,1==t.length?Modernizr[t[0]]=n:(!Modernizr[t[0]]||Modernizr[t[0]]instanceof Boolean||(Modernizr[t[0]]=new Boolean(Modernizr[t[0]])),Modernizr[t[0]][t[1]]=n),o([(n&&0!=n?"":"no-")+t.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=t(e,"undefined")||t(e.call,"undefined")?function(e,n){return n in e&&t(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),a(),o(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+  </script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/just-validate.production.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   <title>Aliance production</title>
 </head>
 
@@ -122,10 +126,10 @@
           <a href="./about.php" class="header__menu-link flex">О компании</a>
         </li>
         <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">Контрактное производство</a>
+          <a href="./contract.php" class="header__menu-link flex">Контрактное производство</a>
         </li>
         <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">
+          <a href="./own.php" class="header__menu-link flex">
             Собственные торговые марки
           </a>
         </li>
@@ -381,15 +385,14 @@
       <section class="contract__manufacturing contract">
         <div class="contract__container">
           <div class="contract__seporator"></div>
-    
           <h2 class="contract__title title">
             Контрактное производство
           </h2>
-    
+      
           <div class="contract__body flex">
             <ul class="contract__list flex">
               <li class="contract__item item flex">
-                <a href="#" class="item__card-link flex">
+                <a href="./autohim.php" class="item__card-link flex">
                   <div class="item__card-box flex">
                     <h3 class="item__card-subtitle">
                       Автомобильная химия
@@ -398,9 +401,12 @@
                       Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.
                     </p>
                   </div>
-                  
-    
-                  <img class="item__card-image" src="img/contracts_image/card_1_img.jpg" alt="auto-сhem">
+      
+                  <picture>
+                    <source type="image/webp" srcset="img/contracts_image/card-1-img.webp">
+                    <source type="image/jpeg" srcset="img/contracts_image/card_1_img.jpg">
+                    <img class="item__card-image" src="img/contracts_image/card_1_img.jpg" alt="auto-сhem">
+                  </picture>
                 </a>
               </li>
               <li class="contract__item item flex">
@@ -410,12 +416,17 @@
                       Бытовая химия
                     </h3>
                     <p class="item__card-text">
-                      А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые
+                      А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на
+                      независимые
                       элементы.
                     </p>
                   </div>
-    
-                  <img class="item__card-image" src="img/contracts_image/card_2_img.jpg" alt="house-chem">
+      
+                  <picture class="item__card-image">
+                    <source type="image/webp" srcset="img/contracts_image/card-2-img.webp">
+                    <source type="image/jpeg" srcset="img/contracts_image/card_2_img.jpg">
+                    <img class="item__card-image" src="img/contracts_image/card_2_img.jpg" alt="house-chem">
+                  </picture>
                 </a>
               </li>
               <li class="contract__item item flex">
@@ -428,8 +439,12 @@
                       Лишь интерактивные прототипы призваны к ответу.
                     </p>
                   </div>
-    
-                  <img class="item__card-image" src="img/contracts_image/card_3_img.jpg" alt="dez-chem">
+      
+                  <picture>
+                    <source type="image/webp" srcset="img/contracts_image/card-3-img.webp">
+                    <source type="image/jpeg" srcset="img/contracts_image/card_3_img.jpg">
+                    <img class="item__card-image" src="img/contracts_image/card_3_img.jpg" alt="dez-chem">
+                  </picture>
                 </a>
               </li>
               <li class="contract__item item flex">
@@ -442,8 +457,12 @@
                       Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.
                     </p>
                   </div>
-    
-                  <img class="item__card-image" src="img/contracts_image/card_3_img.jpg" alt="food-aerosols">
+      
+                  <picture>
+                    <source type="image/webp" srcset="img/contracts_image/card-3-img.webp">
+                    <source type="image/jpeg" srcset="img/contracts_image/card_3_img.jpg">
+                    <img class="item__card-image" src="img/contracts_image/card_3_img.jpg" alt="food-aerosols">
+                  </picture>
                 </a>
               </li>
               <li class="contract__item item flex">
@@ -456,8 +475,12 @@
                       Лишь интерактивные прототипы призваны к ответу.
                     </p>
                   </div>
-    
-                  <img class="item__card-image" src="img/contracts_image/card_1_img.jpg" alt="cosmetic-prod">
+      
+                  <picture>
+                    <source type="image/webp" srcset="img/contracts_image/card-1-img.webp">
+                    <source type="image/jpeg" srcset="img/contracts_image/card_1_img.jpg">
+                    <img class="item__card-image" src="img/contracts_image/card_1_img.jpg" alt="cosmetic-prod">
+                  </picture>
                 </a>
               </li>
               <li class="contract__item item flex">
@@ -467,12 +490,17 @@
                       Краски аэрозольные
                     </h3>
                     <p class="item__card-text">
-                      А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые
+                      А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на
+                      независимые
                       элементы.
                     </p>
                   </div>
-    
-                  <img class="item__card-image" src="img/contracts_image/card_2_img.jpg" alt="spray-paints">
+      
+                  <picture>
+                    <source type="image/webp" srcset="img/contracts_image/card-2-img.webp">
+                    <source type="image/jpeg" srcset="img/contracts_image/card_2_img.jpg">
+                    <img class="item__card-image" src="img/contracts_image/card_2_img.jpg" alt="spray-paints">
+                  </picture>
                 </a>
               </li>
             </ul>
@@ -482,7 +510,7 @@
 
       <section class="trade__marks marks">
         <div class="marks__container">
-          <div class="marks__seporator"></div>
+        <div class="marks__seporator"></div>
 
           <h2 class="marks__title title-full title">
             Cобственные торговые марки
@@ -490,7 +518,7 @@
           <h2 class="marks__title title-truncated title">
             Cобственные марки
           </h2>
-
+      
           <div class="marks__content flex">
             <a href="#" class="marks__link-left marks-link grid">
               <div class="marks__content-image">
@@ -498,17 +526,15 @@
                   <use href="img/sprite.svg#ag_tech"></use>
                 </svg>
               </div>
-
-              
-                <h3 class="marks__content-subtitle">
-                  Автохимия AG-Tech
-                </h3>
-                <p class="marks__content-text">
-                  Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.
-                </p>
-              <!--
-                <div class="marks__content-body"></div>
-              -->
+      
+      
+              <h3 class="marks__content-subtitle">
+                Автохимия AG-Tech
+              </h3>
+              <p class="marks__content-text">
+                Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для
+                поставленных обществом задач.
+              </p>
             </a>
             <a href="#" class="marks__link-right marks-link grid">
               <div class="marks__content-image">
@@ -516,17 +542,15 @@
                   <use href="img/sprite.svg#aliance_prod_icon"></use>
                 </svg>
               </div>
-              
-              
-                <h3 class="marks__content-subtitle">
-                  Автохимия AP
-                </h3>
-                <p class="marks__content-text">
-                  Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.
-                </p>
-              <!--
-                <div class="marks__content-body"></div>
-              -->
+      
+      
+              <h3 class="marks__content-subtitle">
+                Автохимия AP
+              </h3>
+              <p class="marks__content-text">
+                Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для
+                поставленных обществом задач.
+              </p>
             </a>
           </div>
         </div>
@@ -535,7 +559,11 @@
       <section class="founder">
         <div class="founder__content flex">
           <div class="founder__image">
-            <img class="founder__photo" src="img/attitude_to_business/employee.jpg" alt="employee">
+            <picture class="founder__photo">
+              <source type="image/webp" srcset="img/attitude_to_business/employee.webp">
+              <source type="image/jpeg" srcset="img/attitude_to_business/employee.jpg">
+              <img class="founder__photo" src="img/attitude_to_business/employee.jpg" alt="employee">
+            </picture>
           </div>
   
           <div class="founder__info flex">
@@ -671,76 +699,76 @@
 
             <div class="clients__logotypes flex">
               <a class="clents__tiles flex" href="#">
-                <!--
-                                <svg class="clients__tiles-svg">
-                                  <use href="img/sprite.svg#tile_1"></use>
-                                </svg>
-                              -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture class="clients__tile-img">
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture >
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture >
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture >
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture >
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture >
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture >
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
-                <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                <picture >
+                  <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                  <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
+                  <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+                </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
               <a class="clents__tiles flex" href="#">
-                <!--
-                                  <svg class="clients__tiles-svg">
-                                    <use href="img/sprite.svg#tile_1"></use>
-                                  </svg>
-                                -->
+              <picture >
+                <source type="image/webp" srcset="img/clients_icons/tile-colored-1.webp">
+                <source type="image/jpeg" srcset="img/clients_icons/tile-colored_1.jpg">
                 <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client">
+              </picture>
+                <!-- <img class="clients__tile-img" src="img/clients_icons/tile-colored_1.jpg" alt="client"> -->
               </a>
             </div>
           </div>
@@ -794,7 +822,7 @@
             </div>
             
             <div class="blog__slider-buttons-box flex">
-              <a href="#" class="blog__link flex">
+              <a href="./blog.php" class="blog__link flex">
                 Весь блог
               </a>
 
@@ -817,7 +845,7 @@
       </section>
 
 
-      <?php include_once('footer.php');?>
+      <?php include_once('footer.php') ?>
 
       
 
@@ -1094,6 +1122,3 @@
       </div>
     -->
   
-</body>
-
-</html>

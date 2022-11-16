@@ -1,7 +1,12 @@
 
       <section class="cta-form form">
         <div class="form__wrapper container flex">
-          <img class="form__image" src="img/form_image/form_label_paint.png" alt="flacot">
+          <picture  class="form__image">
+            <source type="image/webp" srcset="img/form_image/form-label-paint.webp">
+            <source type="image/jpeg" srcset="img/form_image/form_label_paint.png">
+            <img class="form__image" src="img/form_image/form_label_paint.png" alt="flacot">
+          </picture>
+          <!-- <img class="form__image" src="img/form_image/form_label_paint.png" alt="flacot"> -->
 
           <div class="form__box flex">
             <div class="form__cooperation flex">
@@ -113,7 +118,7 @@
         </div>
       </nav>
 
-      <div class="footer__container middle flex">
+      <div class="footer__container contract-seo middle flex">
         <div class="middle__block-left">
           <h2 class="middle__title">
             Контрактное производство
@@ -197,9 +202,9 @@
         <div class="footer__container lower flex">
           <div class="footer__legal flex">
             <p class="footer__copy">
-              &copy; <?php echo date('d.m.Y')?> «Aliance Production». Все права защищены.
+              &copy; <?php echo date('Y')?> «Aliance Production». Все права защищены.
             </p>
-            <a href="#" class="footer__confidentiality">
+            <a href="./politics.php" class="footer__confidentiality">
               Политики конфиденциальности
             </a>
           </div>
@@ -303,7 +308,8 @@
     </div>
 
     </div>
-    <script src="js/swiper-bundle.min.js"></script>
+    <!-- <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>
-    <script src="js/main.js"></script>
-      
+    <script src="js/main.js"></script> -->
+</body>
+</html>      

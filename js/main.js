@@ -115,6 +115,28 @@ const blogSwiper = new Swiper('.blog__swiper',{
   }
 });
 
+const researchSwiper = new Swiper('.research__swiper',{
+  speed: 400,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.slider-button-blog-prev',
+    prevEl: '.slider-button-blog-next',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    992: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    1100: {
+      spaceBetween: 30,
+    },
+  }
+});
 
 
 

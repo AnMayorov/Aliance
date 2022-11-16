@@ -1,182 +1,138 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" type="text/css" href="https://fonts.googleapis.com">
-    <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com" crossorigin>
-    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>О компании - Aliance production</title>
-  </head>
 
-<body>
-  <div class="wrapper about-wrap">
-    <div class="mobile__menu">
-      <ul class="mobile__menu-list flex">
-        <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">О компании</a>
-        </li>
-        <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Контрактное производство</a>
+<?php
+  $page_title = 'О компании'; 
+  $header_style = 'header-in-pages';
+  include_once('header-page.php') ?>
 
-          <ul class="mobile__submenu flex">
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Автомобильная химия</a>
-            </li>
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Бытовая химия</a>
-            </li>
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Дезинфицирующие средства</a>
-            </li>
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Пищевые аэрозоли</a>
-            </li>
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Косметическая продукция</a>
-            </li>
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Краски аэрозольные</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Собственные торговые марки</a>
 
-          <ul class="mobile__submenu">
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Автохимия AG-Tech</a>
-            </li>
-            <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Автохимия AP</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Новости</a>
-        </li>
-        <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Контакты</a>
-        </li>
-      </ul>
 
-      <a href="tel:+74996861014" class="mobile__phone">+7 (499) 686-10-14</a>
-
-      <ul class="mobile__info-list flex">
-        <li class="mobile__info-item">
-          <a href="#" class="mobile__info-link flex">
-            <svg class="mobile__svg" width="24" height="24">
-              <use href="img/sprite.svg#address_check"></use>
-            </svg>
-            <address class="mobile__info-address">г. Мосвка, Холодильный пер. 4к1с8</address>
-          </a>
-        </li>
-        <li class="mobile__info-item">
-          <a href="mailto:a.dragunov@tdaliance.ru" class="mobile__info-link flex">
-            <svg class="mobile__svg" width="24" height="24">
-              <use href="img/sprite.svg#address_mail"></use>
-            </svg>
-            <span class="mobile__info-span">a.dragunov@tdaliance.ru</span>
-          </a>
-        </li>
-        <li class="mobile__info-item info flex">
-          <a class="info__link-vk" href="#">
-            <svg class="mobile__svg" width="24" height="24">
-              <use href="img/sprite.svg#address_vk"></use>
-            </svg>
-          </a>
-          <a class="info__link-inst" href="#">
-            <svg class="mobile__svg" width="24" height="24">
-              <use href="img/sprite.svg#address_inst"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+<section class="expert-chem-block chem-block">
+  <div class="chem-block__container">
+    <div class="chem-block__body flex">
+      <picture  class="chem-block__image">
+        <source type="image/webp" srcset="img/about_page/expert_chem.webp">
+        <source type="image/jpeg" srcset="img/about_page/expert_chem.jpg">
+        <img class="chem-block__image" src="img/about_page/expert_chem.jpg" alt="chemical_production">
+      </picture>
+      
+  
+      <div class="chem-block__info flex">
+        <div class="chem-block__seporator seporator"></div>
+  
+        <h2 class="chem-block__title title">
+          Мы - эксперты в области производства химии
+        </h2>
+  
+        <p class="chem-block__text">
+          Разнообразный и богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость
+          поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть
+          объединены в целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример
+          континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих
+          проблем настолько очевидна, что перспективное планирование играет важную роль в формировании системы массового
+          участия.
+        </p>
+      </div>
     </div>
 
-    <nav class="header__nav about-nav nav-white flex">
-      <a href="#" class="header__mobile mobile-toggle flex">
-        <div class="mobile__line-box flex">
-          <div class="mobile__line line-top"></div>
-          <div class="mobile__line line-between"></div>
-          <div class="mobile__line line-bottom"></div>
-        </div>
-      </a>
-
-      <a href="./" class="header__logo logo flex">
-        <svg class="logo__svg logo-white">
-          <use href="img/sprite.svg#logo_white"></use>
-        </svg>
-        <svg class="logo__svg logo-black">
-          <use href="img/sprite.svg#logo_black"></use>
-        </svg>
-      </a>
-
-      <ul class="header__menu menu flex">
-        <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">О компании</a>
-        </li>
-        <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">Контрактное производство</a>
-        </li>
-        <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">
-            Собственные торговые марки
-          </a>
-        </li>
-        <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">Новости</a>
-        </li>
-        <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">Контакты</a>
-        </li>
-      </ul>
-
-      <div class="header__buttons flex">
-        <a href="tel:+74996861014" class="header__link-phone flex">
-          <svg class="header__svg-phone">
-            <use href="img/sprite.svg#phone"></use>
-          </svg>
-          <span class="header__number-phone">+7 (499) 686-10-14</span>
-        </a>
-
-        <button class="header__button btn flex" data-toggle="modal" data-target="#feedback-modal">
-          <svg class="header__svg-phone">
-            <use href="img/sprite.svg#phone"></use>
-          </svg>
-          <span class="header__button-text">
-            Получить консультацию
-          </span>
-        </button>
-      </div>
-    </nav>
-
-    <header class="about__header header-in-pages">
-      <div class="header__container about-container container-in-pages">
-        <div class="about__seporator seporator seporator-in-pages"></div>
-        <h1 class="about__title title-in-pages title">
-          О компании
-        </h1>
-        <div class="about__links links-in-pages flex">
-          <a class="about__link link-in-main link-pages" href="#">
-            Главная
-          </a>
-          <div class="about__line line-in-pages"></div>
-          <a class="about__link link-in-page link-pages" href="#">
-            О компании
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <?php include_once('footer.php');?>
+  <?php include_once('./template-parts/swiper-features-block.php') ?>
   </div>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+</section>
+
+<section class="our-production">
+  <div class="our-production__container grid">
+
+    <div class="our-production__info grid-box-1 flex">
+      <div class="our-production__seporator seporator"></div>
+      <h2 class="our-production__title title">
+        Наше производство
+      </h2>
+    </div>
+
+    <div class="our-production__info grid-box-2 flex">
+      <p class="our-production__text">
+        Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает
+        широкому кругу (специалистов) участие в формировании глубокомысленных рассуждений. Но граница обучения кадров
+        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса
+        кластеризации усилий.
+      </p>
+
+      <p class="our-production__text o-p-t">
+        Реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые
+        горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка
+        сегодняшнего дня требует анализа анализа существующих паттернов поведения.
+      </p>
+
+      <div class="our-production__box-list flex">
+        <ul class="production__list our__list">
+          <li class="production__item our__item-col-1 flex">
+            <svg class="production__item-svg our-svg">
+              <use href="img/sprite.svg#p_item_2"></use>
+            </svg>
+      
+            <p class="produktion__item-text">
+              Автомобильная химия
+            </p>
+          </li>
+          <li class="production__item our__item-col-1 flex">
+            <svg class="production__item-svg our-svg">
+              <use href="img/sprite.svg#p_item_11"></use>
+            </svg>
+      
+            <p class="produktion__item-text">
+              Бытовая химия
+            </p>
+          </li>
+          <li class="production__item our__item-col-1 flex">
+            <svg class="production__item-svg our-svg">
+              <use href="img/sprite.svg#p_item_12"></use>
+            </svg>
+      
+            <p class="produktion__item-text">
+              Дезинфицирующие средства
+            </p>
+          </li>
+          <li class="production__item our__item flex">
+            <svg class="production__item-svg our-svg">
+              <use href="img/sprite.svg#p_item_5.2"></use>
+            </svg>
+      
+            <p class="produktion__item-text">
+              Пищевые аэрозоли
+            </p>
+          </li>
+          <li class="production__item our__item flex">
+            <svg class="production__item-svg our-svg svg-visible">
+              <use href="img/sprite.svg#p_item_5"></use>
+            </svg>
+      
+            <p class="produktion__item-text">
+              Косметическая продукция
+            </p>
+          </li>
+          <li class="production__item our__item flex">
+            <svg class="production__item-svg our-svg">
+              <use href="img/sprite.svg#p_item_4"></use>
+            </svg>
+      
+            <p class="produktion__item-text">
+              Краски аэрозольные
+            </p>
+          </li>
+        </ul>
+      </div>  
+    </div>
+
+    <picture  class="our-production__img grid-box-3">
+      <source type="image/webp" srcset="img/about_page/our-production.webp">
+      <source type="image/jpeg" srcset="img/about_page/our_production.jpg">
+      <img class="our-production__img" src="img/about_page/our_production.jpg" alt="lab-worker">
+    </picture>
+  </div>
+</section>
+
+<?php include_once('./template-parts/founder.php') ?>
+<?php include_once('./template-parts/about-research.php') ?>
+<?php include_once('./template-parts/clients-section.php') ?>
+<?php include_once('footer.php') ?>
+
+
