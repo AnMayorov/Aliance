@@ -2120,9 +2120,6 @@ body {
   .contract__item {
     flex-basis: 50%;
   }
-  .item__card-image {
-    min-height: 13.4375rem/*215px*/;
-  }
   .form__image {
     left: 1.875rem;
     max-width: 50rem;
