@@ -63,12 +63,12 @@
         <div class="steps__slider-buttons-box flex">
           <div class="steps__slider-buttons flex">
             <!-- Кнопки навигации вперёд/назад -->
-            <button class="slider-button-steps-prev flex">
+            <button class="slider-button-steps-prev btn flex">
               <svg class="header__svg" width="36" height="20">
                 <use href="img/sprite.svg#arrow_back"></use>
               </svg>
             </button>
-            <button class="slider-button-steps-next flex">
+            <button class="slider-button-steps-next btn flex">
               <svg class="header__svg" width="36" height="20">
                 <use href="img/sprite.svg#arrow_forward"></use>
               </svg>

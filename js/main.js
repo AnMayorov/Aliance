@@ -45,7 +45,7 @@ mMenuToggle.addEventListener("click", (event) => {
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.header__features', {
   speed: 400,
   slidesPerView: 1,
   navigation: {
@@ -143,6 +143,9 @@ const researchSwiper = new Swiper('.research__swiper',{
 let currentModal; //текуще модальное окно
 let modalDialog;  //белое диалоговое окно
 let alertModal = document.querySelector("#alert-modal");  //окно с предупреждением
+let modalClose;
+const body = document.querySelector("body");
+
 
 const modalButtons = document.querySelectorAll("[data-toggle=modal]");  //переключатели(кнопки) модальных окон
 modalButtons.forEach((button) => {
@@ -154,6 +157,8 @@ modalButtons.forEach((button) => {
 
     //открываем текущее окно
     currentModal.classList.toggle("modal__open");
+    
+    body.classList.toggle("lock");
 
     //назначаем диалоговое окно
     modalDialog = currentModal.querySelector(".modal__dialog");
@@ -164,6 +169,7 @@ modalButtons.forEach((button) => {
       if (!event.composedPath().includes(modalDialog)) {
         //... то закрываем окно
         currentModal.classList.remove("modal__open");
+        body.classList.remove("lock");
       }
     });
   });
@@ -174,6 +180,8 @@ document.addEventListener("keyup", (event) => {
     if (event.key == "Escape" && currentModal.classList.contains ("modal__open")) {
       //закрываем текущее окно
       currentModal.classList.toggle("modal__open");
+      //разрешаем прокрутку страницы
+      body.classList.remove("lock");
     }
   });
 

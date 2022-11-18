@@ -27,7 +27,7 @@
               </a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link flex" href="#">
+              <a class="footer__nav-link flex" href="mailto:a.dragunov@tdaliance.ru">
                 <svg class="footer__nav-icon">
                   <use href="img/sprite.svg#address_mail"></use>
                 </svg>
@@ -37,12 +37,12 @@
               </a>
             </li>
             <li class="footer__nav-item flex">
-              <a class="footer__nav-link link-vk flex" href="#">
+              <a class="footer__nav-link link-vk flex" target="_blank" href="https://vk.com/">
                 <svg class="footer__nav-icon">
                   <use href="img/sprite.svg#address_vk"></use>
                 </svg>
               </a>
-              <a class="footer__nav-link flex" href="#">
+              <a class="footer__nav-link flex" target="_blank" href="https://www.instagram.com/">
                 <svg class="footer__nav-icon">
                   <use href="img/sprite.svg#address_inst"></use>
                 </svg>
@@ -61,7 +61,7 @@
 
           <ul class="middle__list">
             <li class="middle__item">
-              <a href="#" class="middle__item-link">
+              <a href="./autohim.php" class="middle__item-link">
                 Автомобильная химия
               </a>
             </li>
@@ -101,7 +101,7 @@
   
             <ul class="middle__list right-list">
               <li class="middle__item">
-                <a href="#" class="middle__item-link">
+                <a href="./agtech.php" class="middle__item-link">
                   Автохимия AG-Tech
                 </a>
               </li>
@@ -115,7 +115,7 @@
 
           <ul class="middle__bold-list">
             <li class="middle__bold-item bold-item-1">
-              <a href="#" class="middle__bold-link">
+              <a href="./about.php" class="middle__bold-link">
                 О компании
               </a>
             </li>

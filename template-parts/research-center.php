@@ -37,12 +37,12 @@
 
         <div class="blog__slider-buttons flex">
           <!-- Кнопки навигации вперёд/назад -->
-          <button class="slider-button-blog-prev flex">
+          <button class="slider-button-blog-next btn flex">
             <svg class="blog__svg blog-arrow-back">
               <use href="img/sprite.svg#arrow_back"></use>
             </svg>
           </button>
-          <button class="slider-button-blog-next flex">
+          <button class="slider-button-blog-prev btn flex">
             <svg class="blog__svg blog-arrow-forward">
               <use href="img/sprite.svg#arrow_forward"></use>
             </svg>

@@ -94,6 +94,7 @@ h6 {
 /********************/
 :root {
   --bg-btn: #5c8ee6;
+  --bg-btn-hover: #3a71d1;
   --bg-steps-line: #ebebf0;
   --bg-search-form: #f0f2f5;
   --bg-modal: rgba(41, 45, 51, 0.5);
@@ -117,6 +118,9 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
   line-height: 160%;
+}
+.lock {
+  overflow: hidden;
 }
 .wrapper {
   flex-direction: column;
@@ -147,6 +151,10 @@ body {
 }
 .btn {
   background-color: var(--bg-btn);
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: var(--bg-btn-hover);
 }
 /********************/
 
@@ -338,7 +346,7 @@ body {
   height: inherit;
   font-weight: 600;
   color: var(--1-color-txt);
-  transition: height 0.4s;
+  transition: height 0.4s, background-color 0.3s ease;
 }
 .header__container {
   position: relative;
@@ -402,7 +410,6 @@ body {
   height: 100%;
   flex-basis: 50%;
   border: 1px solid rgba(235, 235, 240, 0.2); 
-
 }
 
 /**main**************/
@@ -500,7 +507,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: var(--bg-btn);
 }
 
 /*-- Section contract manufacturing --*/
@@ -573,8 +579,6 @@ body {
 }
 .title-truncated {
   display: none;
-}
-.marks__content {
 }
 .marks__link-left, 
 .marks__link-right {
@@ -697,14 +701,10 @@ body {
   height: 2px;
   background: var(--4-color-txt);
 }
-.clients__content {
-}
 
 .clients__production {
   flex: 1 1 43.75rem/*700px*/;
   margin-right: 1.125em/*18px*/;
-}
-.production {
 }
 
 .clients__title {
@@ -1209,6 +1209,7 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
+
 .modal__dialog {
   position: relative;
   margin: auto;
@@ -2406,6 +2407,9 @@ body {
     padding: 0 2.8125rem/*45px*/ 0 2.8125rem/*45px*/;
     transition: all 0.4s;
   }
+  .btn:hover {
+    background-color: var(--bg-btn);
+  }
   .nav-white .header__button {
     padding: 0 2.8125rem/*45px*/ 0 2.8125rem/*45px*/;
   }
@@ -2532,15 +2536,52 @@ body {
   .steps__container {
     padding: 0 8px;
   }
+
+  /*--------------------*/
+  .item__link:hover::before {
+    width: 2.5rem/*40px*/;
+  }
+  /*--------------------*/  
+
   .contract__list {
     flex-wrap: nowrap;
     flex-direction: column;
   }
+
+  /*--------------------*/
+  .contract__item:hover {
+    border-color: var(--bg-steps-line);
+  }
+  .contract__item:hover .item__card-subtitle {
+    color: var(--2-color-txt);
+  }
+  /*--------------------*/
+
+  .marks-link:hover {
+    border-color: var(--bg-steps-line);
+  }
+  .marks-link:hover .marks__icons {
+    fill: var(--3-color-txt);
+  }
+  .marks-link:hover .marks__content-subtitle {
+    color: var(--2-color-txt);
+  }
+  /*--------------------*/
+
+  .founder__link:hover::before {
+    width: 2.5rem/*40px*/;
+  }
+
   .clents__tiles:hover .clients__tile-img {
     transform: none;
     -webkit-filter: grayscale();
             filter: grayscale();
   }
+
+  .blog__link:hover::before {
+    width: 2.5rem/*40px*/;
+  }
+  /*--------------------*/
 
   .form__wrapper {
     position: relative;
@@ -2628,7 +2669,6 @@ body {
     line-height: 160%;
   }
   .header__features {
-    /* overflow: visible; */
     margin: 0;
   }
   .header__features-item {
@@ -2702,9 +2742,6 @@ body {
     margin-right: 20px;
     width: 4rem/*40px*/;
   }
-  .item__link:hover::before {
-    width: 6rem/*60px*/;
-  }
   .steps__slider-buttons {
     width:  12rem/*120px*/;
     height: 4rem/*40px*/;
@@ -2720,14 +2757,6 @@ body {
   .contract__item {
     min-height: 42.9rem/*429px*/
   }
-  /*--------------------*/
-  .contract__item:hover {
-    border-color: var(--bg-steps-line);
-  }
-  .contract__item:hover .item__card-subtitle {
-    color: var(--2-color-txt);
-  }
-  /*--------------------*/
   .item__card-box {
     padding-top: 1.9rem/*19px*/;
     padding-left: 2.9rem/*29px*/;
@@ -2778,17 +2807,6 @@ body {
     padding-left: 3rem/*30px*/;
     min-height: 26.8rem/*268px*/;
   }
-  /*--------------------*/
-  .marks-link:hover {
-    border-color: var(--bg-steps-line);
-  }
-  .marks-link:hover .marks__icons {
-    fill: var(--3-color-txt);
-  }
-  .marks-link:hover .marks__content-subtitle {
-    color: var(--2-color-txt);
-  }
-  /*--------------------*/
   .marks__icons {
     width: 10rem/*100px*/;
     height: 10rem/*100px*/;
@@ -2803,7 +2821,6 @@ body {
     font-size: 1.4rem/*14px*/;
     line-height: 158%;
   }
-  
 
   .founder {
     margin-bottom: 9.9em/*99px*/;
@@ -2849,9 +2866,6 @@ body {
     content: "";
     margin-right: 2rem/*20px*/;
     width: 4rem/*40px*/;
-  }
-  .founder__link:hover::before {
-    width: 6rem/*60px*/;
   }
   /*--------------------*/
   .company-link {
@@ -2967,9 +2981,6 @@ body {
     margin-right: 1.42857em/*20px*/;
     padding-top: 2px;
     width: 4rem/*40px*/;
-  }
-  .blog__link:hover::before {
-    width: 6rem/*60px*/;
   }
   
   .form__wrapper {
@@ -3329,7 +3340,6 @@ body {
     row-gap: 12px;
     flex-wrap: wrap;
   }
-  
 
   /**About page***/
   .chem-block {
