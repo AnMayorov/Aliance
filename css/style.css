@@ -149,6 +149,7 @@ body {
   line-height: 120%;
   color: var(--2-color-txt);
 }
+/*-----------------*/
 .btn {
   background-color: var(--bg-btn);
   transition: background-color 0.3s ease;
@@ -156,13 +157,31 @@ body {
 .btn:hover {
   background-color: var(--bg-btn-hover);
 }
+/*-----------------*/
+.link {
+  position: relative;
+  text-decoration: none;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--bg-btn);
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.link:hover::after {
+  transform: scaleX(1);
+}
 /********************/
 
 /**header************/
 .no-webp .header {
   background: url("../img/header_bg.jpg") center bottom -47px / cover no-repeat;
 }
-
 .header {
   position: relative;
   padding-top: 15.1875rem/*243px*/;
@@ -178,7 +197,6 @@ body {
   height: 100%;
   background: rgba(41, 45, 51, 0.6);
 }
-
 
 .header__nav {
   position: fixed;
@@ -1048,6 +1066,9 @@ body {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+.footer__link-phone:hover {
+  text-decoration: underline;
 }
 .footer__nav-list {
   padding-top: 1px;
@@ -2273,6 +2294,11 @@ body {
   .header__menu-item {
     margin-right: 1.5625rem/*25px*/;
   }
+  /*--------------------*/
+  .header__menu-link:hover::after {
+    transform: scaleX(0);
+  }
+  /*--------------------*/
   .header__buttons {
     height: 100%;
   }
@@ -2280,7 +2306,15 @@ body {
     padding: 0 3.125rem/*50px*/ 0 3.125rem/*50px*/;
     height: inherit;
   }
-
+  /*--------------------*/
+  .btn:hover {
+    background-color: var(--bg-btn);
+  }
+  /*--------------------*/
+  .link:hover::after {
+    transform: scaleX(0);
+  }
+  /*--------------------*/
   .nav-white .header__button {
     padding: 0 3.125rem/*50px*/ 0 3.125rem/*50px*/;
     height: inherit;
@@ -2294,7 +2328,46 @@ body {
   .header__button .header__button-text {
     display: none;
   }
-
+  /*--------------------*/
+  .item__link:hover::before {
+    width: 2.5rem/*40px*/;
+  }
+  /*--------------------*/
+  .contract__item:hover {
+    border-color: var(--bg-steps-line);
+  }
+  .contract__item:hover .item__card-subtitle {
+    color: var(--2-color-txt);
+  }
+  /*--------------------*/ 
+  .marks-link:hover {
+    border-color: var(--bg-steps-line);
+  }
+  .marks-link:hover .marks__icons {
+    fill: var(--3-color-txt);
+  }
+  .marks-link:hover .marks__content-subtitle {
+    color: var(--2-color-txt);
+  }
+  /*--------------------*/
+  .founder__link:hover::before {
+    width: 2.5rem/*40px*/;
+  }
+  /*--------------------*/
+  .clents__tiles:hover .clients__tile-img {
+    transform: none;
+    -webkit-filter: grayscale();
+            filter: grayscale();
+  }
+  /*--------------------*/
+  .blog__link:hover::before {
+    width: 2.5rem/*40px*/;
+  }
+  /*--------------------*/
+  .footer__confidentiality:hover {
+    text-decoration: underline;
+  }
+  /*--------------------*/
   .our__list {
     -moz-columns: 1 auto;
          columns: 1 auto;
@@ -2404,23 +2477,19 @@ body {
     padding: 0 2.8125rem/*45px*/ 0 2.8125rem/*45px*/;
     transition: all 0.4s;
   }
-  .btn:hover {
-    background-color: var(--bg-btn);
-  }
+  
   .nav-white .header__button {
     padding: 0 2.8125rem/*45px*/ 0 2.8125rem/*45px*/;
   }
   .header__button .header__button-text {
     display: none;
   }
-
   /*-----------------------*/
   
   .nav-white .header__logo {
     padding: 0 2.5rem/*40px*/;
   }
   /*-----------------------*/
-
   .mobile__menu {
     position: fixed;
     top: 0;
@@ -2534,51 +2603,10 @@ body {
     padding: 0 8px;
   }
 
-  /*--------------------*/
-  .item__link:hover::before {
-    width: 2.5rem/*40px*/;
-  }
-  /*--------------------*/  
-
   .contract__list {
     flex-wrap: nowrap;
     flex-direction: column;
   }
-
-  /*--------------------*/
-  .contract__item:hover {
-    border-color: var(--bg-steps-line);
-  }
-  .contract__item:hover .item__card-subtitle {
-    color: var(--2-color-txt);
-  }
-  /*--------------------*/
-
-  .marks-link:hover {
-    border-color: var(--bg-steps-line);
-  }
-  .marks-link:hover .marks__icons {
-    fill: var(--3-color-txt);
-  }
-  .marks-link:hover .marks__content-subtitle {
-    color: var(--2-color-txt);
-  }
-  /*--------------------*/
-
-  .founder__link:hover::before {
-    width: 2.5rem/*40px*/;
-  }
-
-  .clents__tiles:hover .clients__tile-img {
-    transform: none;
-    -webkit-filter: grayscale();
-            filter: grayscale();
-  }
-
-  .blog__link:hover::before {
-    width: 2.5rem/*40px*/;
-  }
-  /*--------------------*/
 
   .form__wrapper {
     position: relative;

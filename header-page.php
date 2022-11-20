@@ -123,10 +123,14 @@
 
       <ul class="header__menu menu flex">
         <li class="header__menu-item flex">
-          <a href="./about.php" class="header__menu-link flex">О компании</a>
+          <a href="./about.php" class="header__menu-link flex">
+            О компании
+          </a>
         </li>
         <li class="header__menu-item flex">
-          <a href="./contract.php" class="header__menu-link flex">Контрактное производство</a>
+          <a href="./contract.php" class="header__menu-link flex">
+            Контрактное производство
+          </a>
         </li>
         <li class="header__menu-item flex">
           <a href="./own.php" class="header__menu-link flex">
@@ -167,11 +171,11 @@
           <?php echo $page_title ?> 
         </h1>
         <div class="about__links links-in-pages flex">
-          <a class="about__link link-in-main link-pages" href="#">
+          <a class="about__link link-in-main link-pages link" href="./index.php">
             Главная
           </a>
           <div class="about__line line-in-pages"></div>
-          <a class="about__link link-in-page link-pages" href="#">
+          <a class="about__link link-in-page link-pages link" href="#">
             <?php echo $page_title ?>
           </a>
         </div>

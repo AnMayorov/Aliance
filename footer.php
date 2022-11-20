@@ -82,7 +82,7 @@
 
           <ul class="footer__nav-list flex">
             <li class="footer__nav-item">
-              <a class="footer__nav-link flex" href="#">
+              <a class="footer__nav-link link flex" href="#">
                 <svg class="footer__nav-icon">
                   <use href="img/sprite.svg#address_check"></use>
                 </svg>
@@ -92,7 +92,7 @@
               </a>
             </li>
             <li class="footer__nav-item">
-              <a class="footer__nav-link flex" href="mailto:a.dragunov@tdaliance.ru">
+              <a class="footer__nav-link link flex" href="mailto:a.dragunov@tdaliance.ru">
                 <svg class="footer__nav-icon">
                   <use href="img/sprite.svg#address_mail"></use>
                 </svg>
@@ -102,18 +102,17 @@
               </a>
             </li>
             <li class="footer__nav-item flex">
-              <a class="footer__nav-link link-vk flex" target="_blank" href="https://vk.com/">
+              <a class="footer__nav-link link-vk link flex" target="_blank" href="https://vk.com/">
                 <svg class="footer__nav-icon">
                   <use href="img/sprite.svg#address_vk"></use>
                 </svg>
               </a>
-              <a class="footer__nav-link flex" target="_blank" href="https://www.instagram.com/">
+              <a class="footer__nav-link link flex" target="_blank" href="https://www.instagram.com/">
                 <svg class="footer__nav-icon">
                   <use href="img/sprite.svg#address_inst"></use>
                 </svg>
               </a>
             </li>
-            
           </ul>
         </div>
       </nav>
@@ -126,32 +125,32 @@
 
           <ul class="middle__list">
             <li class="middle__item">
-              <a href="./autohim.php" class="middle__item-link">
+              <a href="./autohim.php" class="middle__item-link link">
                 Автомобильная химия
               </a>
             </li>
             <li class="middle__item">
-              <a href="#" class="middle__item-link">
+              <a href="#" class="middle__item-link link">
                 Бытовая химия
               </a>
             </li>
             <li class="middle__item">
-              <a href="#" class="middle__item-link">
+              <a href="#" class="middle__item-link link">
                 Дезинфицирующие средства
               </a>
             </li>
             <li class="middle__item item-col-2">
-              <a href="#" class="middle__item-link">
+              <a href="#" class="middle__item-link link">
                 Пищевые аэрозоли
               </a>
             </li>
             <li class="middle__item item-col-2">
-              <a href="#" class="middle__item-link">
+              <a href="#" class="middle__item-link link">
                 Косметическая продукция
               </a>
             </li>
             <li class="middle__item item-col-2">
-              <a href="#" class="middle__item-link">
+              <a href="#" class="middle__item-link link">
                 Краски аэрозольные
               </a>
             </li>
@@ -166,12 +165,12 @@
   
             <ul class="middle__list right-list">
               <li class="middle__item">
-                <a href="./agtech.php" class="middle__item-link">
+                <a href="./agtech.php" class="middle__item-link link">
                   Автохимия AG-Tech
                 </a>
               </li>
               <li class="middle__item">
-                <a href="#" class="middle__item-link">
+                <a href="#" class="middle__item-link link">
                   Автохимия AP
                 </a>
               </li>
@@ -180,17 +179,17 @@
 
           <ul class="middle__bold-list">
             <li class="middle__bold-item bold-item-1">
-              <a href="./about.php" class="middle__bold-link">
+              <a href="./about.php" class="middle__bold-link link">
                 О компании
               </a>
             </li>
             <li class="middle__bold-item bold-item-2">
-              <a href="#" class="middle__bold-link">
+              <a href="#" class="middle__bold-link link">
                 Новости
               </a>
             </li>
             <li class="middle__bold-item bold-item-3">
-              <a href="#" class="middle__bold-link">
+              <a href="#" class="middle__bold-link link">
                 Контакты
               </a>
             </li>
@@ -204,7 +203,7 @@
             <p class="footer__copy">
               &copy; <?php echo date('Y')?> «Aliance Production». Все права защищены.
             </p>
-            <a href="./politics.php" class="footer__confidentiality">
+            <a href="./politics.php" class="footer__confidentiality link">
               Политики конфиденциальности
             </a>
           </div>

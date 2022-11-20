@@ -122,10 +122,14 @@
 
       <ul class="header__menu menu flex">
         <li class="header__menu-item flex">
-          <a href="./about.php" class="header__menu-link flex">О компании</a>
+          <a href="./about.php" class="header__menu-link flex">
+            О компании
+          </a>
         </li>
         <li class="header__menu-item flex">
-          <a href="./contract.php" class="header__menu-link flex">Контрактное производство</a>
+          <a href="./contract.php" class="header__menu-link flex">
+            Контрактное производство
+          </a>
         </li>
         <li class="header__menu-item flex">
           <a href="./own.php" class="header__menu-link flex">
@@ -166,22 +170,21 @@
           <source type="image/jpeg" srcset="img/internal_pages/avto-him.png">
           <img class="autohim__img img-in-pages" src="img/internal_pages/avto-him.png" alt="autohim">
         </picture>
-        <!-- <img class="autohim__img img-in-pages" src="img/internal_pages/avto-him.png" alt="autohim"> -->
-
+        
         <div class="autohim__seporator seporator seporator-in-pages"></div>
         <h1 class="autohim__title title-in-pages title">
           <?php echo $page_title ?>
         </h1>
         <div class="autohim__links links-in-pages flex">
-          <a class="autohim__link link-in-main link-pages" href="#">
+          <a class="autohim__link link-in-main link-pages link" href="./index.php">
             Главная
           </a>
           <div class="autohim__line line-in-pages"></div>
-          <a class="autohim__link link-previous-page link-pages" href="#">
+          <a class="autohim__link link-previous-page link-pages link" href="./contract.php">
             Контрактное производство
           </a>
           <div class="autohim__line line-in-pages"></div>
-          <a class="autohim__link link-in-page link-pages" href="#">
+          <a class="autohim__link link-in-page link-pages link" href="#">
             Автомобильная химия
           </a>
         </div>
