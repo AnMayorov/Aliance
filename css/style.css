@@ -1037,9 +1037,7 @@ body {
   color: var(--3-color-txt);
 }
 
-
 /**footer************/
-
 .footer__nav {
   align-items: center;
   min-height: 10.1875rem/*163px*/;
