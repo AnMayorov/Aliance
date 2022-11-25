@@ -1,6 +1,7 @@
 
 <?php
 $page_title = 'Автомобильная химия';
+$page_header_link = 'Контрактное производство';
 $header_style = 'header-in-pages';
 include_once('autohim-header.php');
 ?>

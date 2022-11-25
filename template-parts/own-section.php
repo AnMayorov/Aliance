@@ -1,12 +1,6 @@
 
 <section class="trade__marks own-section-marcs marks">
   <div class="marks__container">
-    <?php
-      if (!empty($section_title)) {
-        echo '<div class="marks__seporator"></div>';
-        echo '<h2 class="marks__title title-full title">'. $section_title .' </h2>';
-      }
-    ?>
 
     <!-- <h2 class="marks__title title-full title">
       Cобственные торговые марки
@@ -16,7 +10,7 @@
     </h2> -->
 
     <div class="marks__content flex">
-      <a href="#" class="marks__link-left marks-link grid">
+      <a href="./agtech.php" class="marks__link-left marks-link grid">
         <div class="marks__content-image">
           <svg class="marks__icons">
             <use href="img/sprite.svg#ag_tech"></use>

@@ -23,14 +23,14 @@
     <div class="mobile__menu">
       <ul class="mobile__menu-list flex">
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">О компании</a>
+          <a href="./about.php" class="mobile__menu-link">О компании</a>
         </li>
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Контрактное производство</a>
+          <a href="./contract.php" class="mobile__menu-link">Контрактное производство</a>
 
           <ul class="mobile__submenu flex">
             <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Автомобильная химия</a>
+              <a href="./autohim.php" class="mobile__submenu-link">Автомобильная химия</a>
             </li>
             <li class="mobile__submenu-item">
               <a href="#" class="mobile__submenu-link">Бытовая химия</a>
@@ -50,11 +50,11 @@
           </ul>
         </li>
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Собственные торговые марки</a>
+          <a href="./own.php" class="mobile__menu-link">Собственные торговые марки</a>
 
           <ul class="mobile__submenu">
             <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Автохимия AG-Tech</a>
+              <a href="./agtech.php" class="mobile__submenu-link">Автохимия AG-Tech</a>
             </li>
             <li class="mobile__submenu-item">
               <a href="#" class="mobile__submenu-link">Автохимия AP</a>
@@ -65,7 +65,7 @@
           <a href="#" class="mobile__menu-link">Новости</a>
         </li>
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Контакты</a>
+          <a href="./contacts.php" class="mobile__menu-link">Контакты</a>
         </li>
       </ul>
 
@@ -89,12 +89,12 @@
           </a>
         </li>
         <li class="mobile__info-item info flex">
-          <a class="info__link-vk" href="#">
+          <a class="info__link-vk" href="https://vk.com/" target="_blank">
             <svg class="mobile__svg" width="24" height="24">
               <use href="img/sprite.svg#address_vk"></use>
             </svg>
           </a>
-          <a class="info__link-inst" href="#">
+          <a class="info__link-inst" href="https://www.instagram.com/" target="_blank">
             <svg class="mobile__svg" width="24" height="24">
               <use href="img/sprite.svg#address_inst"></use>
             </svg>
@@ -137,7 +137,7 @@
           <a href="#" class="header__menu-link flex">Новости</a>
         </li>
         <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">Контакты</a>
+          <a href="./contacts.php" class="header__menu-link flex">Контакты</a>
         </li>
       </ul>
 
@@ -469,13 +469,12 @@
           </h2>
       
           <div class="marks__content flex">
-            <a href="#" class="marks__link-left marks-link grid">
+            <a href="./agtech.php" class="marks__link-left marks-link grid">
               <div class="marks__content-image">
                 <svg class="marks__icons">
                   <use href="img/sprite.svg#ag_tech"></use>
                 </svg>
               </div>
-      
       
               <h3 class="marks__content-subtitle">
                 Автохимия AG-Tech
@@ -491,7 +490,6 @@
                   <use href="img/sprite.svg#aliance_prod_icon"></use>
                 </svg>
               </div>
-      
       
               <h3 class="marks__content-subtitle">
                 Автохимия AP
@@ -529,7 +527,7 @@
               А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
             </p>
 
-            <a href="#" class="founder__link company-link flex">
+            <a href="#" class="founder__link company-link flex" data-toggle="modal" data-target="#feedback-modal">
               Подробнее о компании
             </a>
             <a href="#" class="founder__link mission-link flex">

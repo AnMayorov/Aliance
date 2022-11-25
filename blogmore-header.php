@@ -15,7 +15,6 @@
     <script src="js/just-validate.production.min.js" defer></script>
     <script src="js/main.js" defer></script>
     <title><?php echo $page_title ?> - Aliance production</title>
-      <!-- <?= $page_title ?> - короткая запись -->
   </head>
 
 <body class="inter-page">
@@ -164,22 +163,24 @@
       </div>
     </nav>
 
-    <header class="about__header <?php echo $header_style ?>">
-      <div class="header__container about-container container-in-pages">
-        <div class="about__seporator seporator seporator-in-pages"></div>
-        <h1 class="about__title title-in-pages title">
-          <?php echo $page_title ?> 
+    <header class="autohim__header blog-more__header">
+      <div class="header__container autohim-container container-in-pages">
+        <div class="autohim__seporator seporator seporator-in-pages"></div>
+        <h1 class="blog-more__title title-in-pages title">
+          <?php echo $page_title ?>
         </h1>
-        <div class="about__links links-in-pages flex">
-          <a class="about__link link-in-main link-pages link" href="./index.php">
+        <div class="blog-more__links links-in-pages flex">
+          <a class="blog-more__link link-in-main link-pages link" href="./index.php">
             Главная
           </a>
-          <div class="about__line line-in-pages"></div>
-          <a class="about__link link-in-page link-pages link" href="#">
+          <div class="blog-more__line line-in-pages"></div>
+          <a class="blog-more__link link-previous-page link-pages link" href="./contract.php">
+            <?php echo $page_header_link ?>
+          </a>
+          <div class="blog-more__line line-in-pages"></div>
+          <a class="blog-more__link link-in-page link-pages link" href="#">
             <?php echo $page_title ?>
           </a>
         </div>
       </div>
     </header>
-
-    <main class="main">

@@ -124,7 +124,7 @@
               </a>
             </li>
             <li class="middle__bold-item bold-item-3">
-              <a href="#" class="middle__bold-link link">
+              <a href="./contacts.php" class="middle__bold-link link">
                 Контакты
               </a>
             </li>

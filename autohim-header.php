@@ -17,19 +17,19 @@
     <title><?php echo $page_title ?> - Aliance production</title>
   </head>
 
-<body>
+<body class="inter-page">
   <div class="wrapper about-wrap">
     <div class="mobile__menu">
       <ul class="mobile__menu-list flex">
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">О компании</a>
+          <a href="./about.php" class="mobile__menu-link">О компании</a>
         </li>
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Контрактное производство</a>
+          <a href="./contract.php" class="mobile__menu-link">Контрактное производство</a>
 
           <ul class="mobile__submenu flex">
             <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Автомобильная химия</a>
+              <a href="./autohim.php" class="mobile__submenu-link">Автомобильная химия</a>
             </li>
             <li class="mobile__submenu-item">
               <a href="#" class="mobile__submenu-link">Бытовая химия</a>
@@ -49,11 +49,11 @@
           </ul>
         </li>
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Собственные торговые марки</a>
+          <a href="./own.php" class="mobile__menu-link">Собственные торговые марки</a>
 
           <ul class="mobile__submenu">
             <li class="mobile__submenu-item">
-              <a href="#" class="mobile__submenu-link">Автохимия AG-Tech</a>
+              <a href="./agtech.php" class="mobile__submenu-link">Автохимия AG-Tech</a>
             </li>
             <li class="mobile__submenu-item">
               <a href="#" class="mobile__submenu-link">Автохимия AP</a>
@@ -64,7 +64,7 @@
           <a href="#" class="mobile__menu-link">Новости</a>
         </li>
         <li class="mobile__menu-item">
-          <a href="#" class="mobile__menu-link">Контакты</a>
+          <a href="./contacts.php" class="mobile__menu-link">Контакты</a>
         </li>
       </ul>
 
@@ -88,12 +88,12 @@
           </a>
         </li>
         <li class="mobile__info-item info flex">
-          <a class="info__link-vk" href="#">
+          <a class="info__link-vk" href="https://vk.com/" target="_blank">
             <svg class="mobile__svg" width="24" height="24">
               <use href="img/sprite.svg#address_vk"></use>
             </svg>
           </a>
-          <a class="info__link-inst" href="#">
+          <a class="info__link-inst" href="https://www.instagram.com/" target="_blank">
             <svg class="mobile__svg" width="24" height="24">
               <use href="img/sprite.svg#address_inst"></use>
             </svg>
@@ -140,7 +140,7 @@
           <a href="#" class="header__menu-link flex">Новости</a>
         </li>
         <li class="header__menu-item flex">
-          <a href="#" class="header__menu-link flex">Контакты</a>
+          <a href="./contacts.php" class="header__menu-link flex">Контакты</a>
         </li>
       </ul>
 
@@ -181,11 +181,11 @@
           </a>
           <div class="autohim__line line-in-pages"></div>
           <a class="autohim__link link-previous-page link-pages link" href="./contract.php">
-            Контрактное производство
+            <?php echo $page_header_link ?>
           </a>
           <div class="autohim__line line-in-pages"></div>
           <a class="autohim__link link-in-page link-pages link" href="#">
-            Автомобильная химия
+            <?php echo $page_title ?>
           </a>
         </div>
       </div>

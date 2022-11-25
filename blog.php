@@ -8,7 +8,7 @@ include_once('header-page.php') ?>
   <div class="page-blog__container cards-box flex">
     <ul class="page-blog__list flex">
       <li class="page-blog__item flex">
-        <a href="#" class="page-blog__link page-card-link-1 flex">
+        <a href="./blogmore.php" class="page-blog__link page-card-link-1 flex">
           <h3 class="blog__slide-subtitle page-blog__subtitle-const">
             Современная методология разработки одухотворила всех причастных
           </h3>
